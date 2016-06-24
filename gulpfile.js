@@ -37,7 +37,7 @@ gulp.task('css', function () {
             cascade: true,
             remove: true
         }))
-        .pipe(gulp.dest('dist/css'))
+        //.pipe(gulp.dest('dist/css'))
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
         .pipe(gulp.dest('dist/css'))
