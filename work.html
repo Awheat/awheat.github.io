@@ -26,9 +26,9 @@
 		<nav class="nav">
 			<a href="#" class="logo"><img src="dist/images/photo.jpg" alt="中青公益logo"></a>
 			<div class="nav-bar">
-				<a href="index.html" class="cur">张三</a>
+				<a href="index.html">张三</a>
 				<span>/</span>
-				<a href="work.html">李四</a>
+				<a href="work.html" class="cur">李四</a>
 				<span>/</span>
 				<a href="life.html">王五</a>
 				<span>/</span>
@@ -38,27 +38,63 @@
 	</div>
 
 	<!-- main -->
-	<div class="wraper-main work-page clearfix">
-		<div class="main-category">
-			<ul>
-				<li>Work</li>
+	<div class="wraper-main clearfix">
+		<div class="js-tab work-page">
+			<ul class="tab-titles">
+				<li class="active">Work</li>
 				<li>CSS/CSS3</li>
 				<li>JS/JQUERY</li>
 				<li>HTML/HTML5</li>
 			</ul>
-		</div>
-		<div class="main-content">
-			<div class="main-cont-work">
-				<a href="#">同桌的你们</a>
-				<a href="#">愛情呼叫轉移</a>
-				<a href="#">十年</a>
-				<a href="#">時間都去哪了</a>
-				<a href="#">时间煮雨</a>
-				<a href="#">青花瓷</a>
-				<a href="#">说好的幸福</a>
-				<a href="#">我只在乎你</a>
-				<a href="#">当我老了</a>
-				<a href="#">梦中的婚礼</a>
+			<div class="tab-contents">
+				<div class="cont-items wk-conts">
+					<a href="#">同桌的你们</a>
+					<a href="#">愛情呼叫轉移</a>
+					<a href="#">十年</a>
+					<a href="#">時間都去哪了</a>
+					<a href="#">时间煮雨</a>
+					<a href="#">青花瓷</a>
+					<a href="#">说好的幸福</a>
+					<a href="#">我只在乎你</a>
+					<a href="#">当我老了</a>
+					<a href="#">梦中的婚礼</a>
+				</div>
+				<div class="cont-items wk-conts">
+					<a href="#">同桌的你们</a>
+					<a href="#">愛情呼叫轉移</a>
+					<a href="#">十年</a>
+					<a href="#">時間都去哪了</a>
+					<a href="#">时间煮雨</a>
+					<a href="#">青花瓷</a>
+					<a href="#">说好的幸福</a>
+					<a href="#">我只在乎你</a>
+					<a href="#">当我老了</a>
+					<a href="#">梦中的婚礼</a>
+				</div>
+				<div class="cont-items wk-conts">
+					<a href="#">同桌的你们</a>
+					<a href="#">愛情呼叫轉移</a>
+					<a href="#">十年</a>
+					<a href="#">時間都去哪了</a>
+					<a href="#">时间煮雨</a>
+					<a href="#">青花瓷</a>
+					<a href="#">说好的幸福</a>
+					<a href="#">我只在乎你</a>
+					<a href="#">当我老了</a>
+					<a href="#">梦中的婚礼</a>
+				</div>
+				<div class="cont-items wk-conts">
+					<a href="#">同桌的你们</a>
+					<a href="#">愛情呼叫轉移</a>
+					<a href="#">十年</a>
+					<a href="#">時間都去哪了</a>
+					<a href="#">时间煮雨</a>
+					<a href="#">青花瓷</a>
+					<a href="#">说好的幸福</a>
+					<a href="#">我只在乎你</a>
+					<a href="#">当我老了</a>
+					<a href="#">梦中的婚礼</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -69,12 +105,14 @@
 	</div>
 </body>
 <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="src/js/js-tabs.js"></script>
 <script type="text/javascript">
-	/*
-	*js-tabs
-	*
-	* tabs-titles
-	* tabs-contents
-	* */
+	$(function(){
+		new JsTabs({
+			id:'.js-tab',
+			event:'hover',
+			effects:true
+		});
+	});
 </script>
 </html>

@@ -26,11 +26,11 @@
 		<nav class="nav">
 			<a href="#" class="logo"><img src="dist/images/photo.jpg" alt="中青公益logo"></a>
 			<div class="nav-bar">
-				<a href="index.html" class="cur">张三</a>
+				<a href="index.html">张三</a>
 				<span>/</span>
 				<a href="work.html">李四</a>
 				<span>/</span>
-				<a href="life.html">王五</a>
+				<a href="life.html" class="cur">王五</a>
 				<span>/</span>
 				<a href="about.html">麻溜</a>
 			</div>
@@ -38,97 +38,70 @@
 	</div>
 
 	<!-- main -->
-	<div class="wraper-main life-page">
-		<div class="tags">
-			<span class="cur">言语</span><span>画面</span><span>声音</span>
-		</div>
-
-		<div class="tags-content">
-			<div class="chats">
-				<a href="#">同桌的你们</a>
-				<a href="#">愛情呼叫轉移</a>
-				<a href="#">十年</a>
-				<a href="#">時間都去哪了</a>
-				<a href="#">时间煮雨</a>
-				<a href="#">青花瓷</a>
-				<a href="#">说好的幸福</a>
-				<a href="#">同桌的你们</a>
-				<a href="#">愛情呼叫轉移</a>
-				<a href="#">十年</a>
-				<a href="#">時間都去哪了</a>
-				<a href="#">时间煮雨</a>
-				<a href="#">青花瓷</a>
-				<a href="#">说好的幸福</a>
+	<div class="wraper-main">
+		<div class="js-tab life-page">
+			<ul class="tab-titles">
+				<li class="active">言语</li>
+				<li>画面</li>
+				<li>声音</li>
+			</ul>
+			<div class="tab-contents">
+				<div class="cont-items chats">
+					<a href="#">同桌的你们</a>
+					<a href="#">愛情呼叫轉移</a>
+					<a href="#">十年</a>
+					<a href="#">時間都去哪了</a>
+					<a href="#">时间煮雨</a>
+					<a href="#">青花瓷</a>
+					<a href="#">说好的幸福</a>
+					<a href="#">同桌的你们</a>
+					<a href="#">愛情呼叫轉移</a>
+					<a href="#">十年</a>
+					<a href="#">時間都去哪了</a>
+					<a href="#">时间煮雨</a>
+					<a href="#">青花瓷</a>
+					<a href="#">说好的幸福</a>
+				</div>
+				<div class="cont-items picture">
+					<ul class="clearfix">
+						<li>
+							<figure>
+								<img src="dist/images/1.jpg">
+								<figcaption>
+								房山南梯摘柿子(122张)
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="dist/images/1.jpg">
+								<figcaption>
+								房山南梯摘柿子(122张)
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="dist/images/1.jpg">
+								<figcaption>
+								房山南梯摘柿子(122张)
+								</figcaption>
+							</figure>
+						</li>
+						<li>
+							<figure>
+								<img src="dist/images/1.jpg">
+								<figcaption>
+								房山南梯摘柿子(122张)
+								</figcaption>
+							</figure>
+						</li>
+					</ul>
+				</div>
+				<div class="cont-items">
+					内容建设中...
+				</div>
 			</div>
-			<div class="pictures">
-				<ul class="clearfix">
-					<li>
-						<figure>
-							<img src="dist/images/1.jpg">
-							<figcaption>
-								房山南梯摘柿子(122张)
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="dist/images/1.jpg">
-							<figcaption>
-								房山南梯摘柿子(122张)
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="dist/images/1.jpg">
-							<figcaption>
-								房山南梯摘柿子(122张)
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="dist/images/1.jpg">
-							<figcaption>
-								房山南梯摘柿子(122张)
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="dist/images/1.jpg">
-							<figcaption>
-								房山南梯摘柿子(122张)
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="dist/images/1.jpg">
-							<figcaption>
-								房山南梯摘柿子(122张)
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="dist/images/1.jpg">
-							<figcaption>
-								房山南梯摘柿子(122张)
-							</figcaption>
-						</figure>
-					</li>
-					<li>
-						<figure>
-							<img src="dist/images/1.jpg">
-							<figcaption>
-								房山南梯摘柿子(122张)
-							</figcaption>
-						</figure>
-					</li>
-				</ul>
-			</div>
-			<div class="sounds"></div>
 		</div>
 	</div>
 
@@ -137,4 +110,15 @@
 		Copyright (c) by WuWangCheng 2016
 	</div>
 </body>
+<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="src/js/js-tabs.js"></script>
+<script type="text/javascript">
+	$(function(){
+		new JsTabs({
+			id:'.js-tab',
+			event:'click',
+			effects:false
+		});
+	});
+</script>
 </html>
