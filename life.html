@@ -47,20 +47,12 @@
 			</ul>
 			<div class="tab-contents">
 				<div class="cont-items chats">
-					<a href="#">同桌的你们</a>
-					<a href="#">愛情呼叫轉移</a>
-					<a href="#">十年</a>
-					<a href="#">時間都去哪了</a>
-					<a href="#">时间煮雨</a>
-					<a href="#">青花瓷</a>
-					<a href="#">说好的幸福</a>
-					<a href="#">同桌的你们</a>
-					<a href="#">愛情呼叫轉移</a>
-					<a href="#">十年</a>
-					<a href="#">時間都去哪了</a>
-					<a href="#">时间煮雨</a>
-					<a href="#">青花瓷</a>
-					<a href="#">说好的幸福</a>
+                    <!-- 模板 -->
+                    <script id="article-list" type="text/html">
+                        {{each list as value}}
+                            <a href="{{value.url}}">{{value.title}}</a>
+                        {{/each}}
+                    </script>
 				</div>
 				<div class="cont-items picture">
 					<ul class="clearfix">
@@ -68,7 +60,7 @@
 							<figure>
 								<img src="dist/images/1.jpg">
 								<figcaption>
-								房山南梯摘柿子(122张)
+									<span class="icon-price-tag"></span>天青色烟雨<i class="pic-num">10张</i>
 								</figcaption>
 							</figure>
 						</li>
@@ -76,7 +68,7 @@
 							<figure>
 								<img src="dist/images/1.jpg">
 								<figcaption>
-								房山南梯摘柿子(122张)
+									<span class="icon-price-tag"></span>天青色烟雨<i class="pic-num">10张</i>
 								</figcaption>
 							</figure>
 						</li>
@@ -84,7 +76,7 @@
 							<figure>
 								<img src="dist/images/1.jpg">
 								<figcaption>
-								房山南梯摘柿子(122张)
+									<span class="icon-price-tag"></span>天青色烟雨<i class="pic-num">10张</i>
 								</figcaption>
 							</figure>
 						</li>
@@ -92,7 +84,7 @@
 							<figure>
 								<img src="dist/images/1.jpg">
 								<figcaption>
-								房山南梯摘柿子(122张)
+									<span class="icon-price-tag"></span>天青色烟雨<i class="pic-num">10张</i>
 								</figcaption>
 							</figure>
 						</li>
@@ -111,14 +103,6 @@
 	</div>
 </body>
 <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="dist/js/js-tabs.js"></script>
-<script type="text/javascript">
-	$(function(){
-		new JsTabs({
-			id:'.js-tab',
-			event:'click',
-			effects:false
-		});
-	});
-</script>
+<script type="text/javascript" src="src/js/artTemplate.js"></script>
+<script type="text/javascript" src="src/js/life.js"></script>
 </html>
