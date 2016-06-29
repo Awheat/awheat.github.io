@@ -45,50 +45,30 @@
 				<li>画面</li>
 				<li>声音</li>
 			</ul>
-			<div class="tab-contents">
+			<div class="tab-contents loading">
 				<div class="cont-items chats">
                     <!-- 模板 -->
-                    <script id="article-list" type="text/html">
+                    <script id="article" type="text/html">
                         {{each list as value}}
                             <a href="{{value.url}}">{{value.title}}</a>
                         {{/each}}
                     </script>
 				</div>
 				<div class="cont-items picture">
-					<ul class="clearfix">
-						<li>
-							<figure>
-								<img src="dist/images/1.jpg">
-								<figcaption>
-									<span class="icon-price-tag"></span>天青色烟雨<i class="pic-num">10张</i>
-								</figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="dist/images/1.jpg">
-								<figcaption>
-									<span class="icon-price-tag"></span>天青色烟雨<i class="pic-num">10张</i>
-								</figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="dist/images/1.jpg">
-								<figcaption>
-									<span class="icon-price-tag"></span>天青色烟雨<i class="pic-num">10张</i>
-								</figcaption>
-							</figure>
-						</li>
-						<li>
-							<figure>
-								<img src="dist/images/1.jpg">
-								<figcaption>
-									<span class="icon-price-tag"></span>天青色烟雨<i class="pic-num">10张</i>
-								</figcaption>
-							</figure>
-						</li>
-					</ul>
+                    <script id="album" type="text/html">
+                        <ul class="clearfix">
+                        {{each list as value}}
+                            <li>
+                                <figure>
+                                    <img src="{{value.cover}}">
+                                    <figcaption>
+                                        <span class="icon-price-tag"></span>{{value.name}}<i class="pic-num">{{value.num}}张</i>
+                                    </figcaption>
+                                </figure>
+                            </li>
+                        {{/each}}
+                        </ul>
+                    </script>
 				</div>
 				<div class="cont-items">
 					内容建设中...

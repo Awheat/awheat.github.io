@@ -1,71 +1,75 @@
 {
-  "aa":{
-    "id":"1111",
-    "name":"天青色烟雨",
-    "cover":"dist/images/1.jpg",
-    "num":"10",
-    "pictures":[
-      {
-        "src":"dist/images/2.jpg",
-        "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
-        "location":"北京"
-      },
-      {
-        "src":"dist/images/3.jpg",
-        "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
-        "location":"北京"
-      },
-      {
-        "src":"dist/images/4.jpg",
-        "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
-        "location":"北京"
-      }
-    ]
-  },
-  "bb":{
-    "id":"222",
-    "name":"天青色烟雨",
-    "cover":"dist/images/1.jpg",
-    "num":"5",
-    "pictures":[
-      {
-        "src":"dist/images/3.jpg",
-        "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
-        "location":"北京"
-      },
-      {
-        "src":"dist/images/4.jpg",
-        "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
-        "location":"北京"
-      },
-      {
-        "src":"dist/images/5.jpg",
-        "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
-        "location":"北京"
-      }
-    ]
-  },
-  "cc":{
-    "id":"333",
-    "name":"天青色烟雨",
-    "cover":"dist/images/1.jpg",
-    "num":"7",
-    "pictures":[
-      {
-        "src":"dist/images/5.jpg",
-        "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
-        "location":"北京"
-      },
-      {
-        "src":"dist/images/3.jpg",
-        "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
-        "location":"北京"
-      },
-      {
-        "src":"dist/images/4.jpg",
-        "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
-        "location":"北京"
-      }
-    ]
-  }
+  "list":[
+    {
+      "id":"1111",
+      "name":"天青色烟雨",
+      "cover":"dist/images/1.jpg",
+      "num":"10",
+      "pictures":[
+        {
+          "src":"dist/images/2.jpg",
+          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "location":"北京"
+        },
+        {
+          "src":"dist/images/3.jpg",
+          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "location":"北京"
+        },
+        {
+          "src":"dist/images/4.jpg",
+          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "location":"北京"
+        }
+      ]
+    },
+    {
+      "id":"222",
+      "name":"时间都去哪了",
+      "cover":"dist/images/1.jpg",
+      "num":"5",
+      "pictures":[
+        {
+          "src":"dist/images/3.jpg",
+          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "location":"北京"
+        },
+        {
+          "src":"dist/images/4.jpg",
+          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "location":"北京"
+        },
+        {
+          "src":"dist/images/5.jpg",
+          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "location":"北京"
+        }
+      ]
+    },
+    {
+      "id":"333",
+      "name":"说好的幸福",
+      "cover":"dist/images/1.jpg",
+      "num":"7",
+      "pictures":[
+        {
+          "src":"dist/images/5.jpg",
+          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "location":"北京"
+        },
+        {
+          "src":"dist/images/3.jpg",
+          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "location":"北京"
+        },
+        {
+          "src":"dist/images/4.jpg",
+          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "location":"北京"
+        }
+      ]
+    }
+
+  ],
+  "msg":"success"
 }
