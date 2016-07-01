@@ -7,18 +7,13 @@
       "num":"10",
       "pictures":[
         {
-          "src":"dist/images/2.jpg",
-          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "src":"dist/images/photo.jpg",
+          "descation":"天青色",
           "location":"北京"
         },
         {
           "src":"dist/images/3.jpg",
-          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
-          "location":"北京"
-        },
-        {
-          "src":"dist/images/4.jpg",
-          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "descation":"石板路",
           "location":"北京"
         }
       ]
@@ -26,22 +21,22 @@
     {
       "id":"222",
       "name":"时间都去哪了",
-      "cover":"dist/images/1.jpg",
+      "cover":"dist/images/2.jpg",
       "num":"5",
       "pictures":[
         {
           "src":"dist/images/3.jpg",
-          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "descation":"秋雨淅沥",
           "location":"北京"
         },
         {
           "src":"dist/images/4.jpg",
-          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "descation":"冬雪绵绵",
           "location":"北京"
         },
         {
           "src":"dist/images/5.jpg",
-          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "descation":"春色满庭",
           "location":"北京"
         }
       ]
@@ -49,22 +44,27 @@
     {
       "id":"333",
       "name":"说好的幸福",
-      "cover":"dist/images/1.jpg",
+      "cover":"dist/images/3.jpg",
       "num":"7",
       "pictures":[
         {
           "src":"dist/images/5.jpg",
-          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "descation":"夕阳相伴",
           "location":"北京"
         },
         {
           "src":"dist/images/3.jpg",
-          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "descation":"策马奔腾",
           "location":"北京"
         },
         {
           "src":"dist/images/4.jpg",
-          "descation":"天青色等烟雨 而我在等你,炊烟袅袅升起 隔江千万里!",
+          "descation":"山无棱",
+          "location":"北京"
+        },
+        {
+          "src":"dist/images/4.jpg",
+          "descation":"天地合",
           "location":"北京"
         }
       ]
