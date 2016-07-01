@@ -28,8 +28,8 @@
             html.push('<span class="lightbox-btn next-btn"></span>');
             html.push('</div>');
             html.push('<div class="lightbox-caption">');
-            html.push('<h3 class="lightbox-caption-desc"></h3>');
-            html.push('<p class="lightbox-caption-ind"></p>');
+            html.push('<h3 class="lightbox-caption-desc">descrition</h3>');
+            html.push('<p class="lightbox-caption-ind">curr 1 of 4</p>');
             html.push('<span class="lightbox-close-btn"></span>');
             html.push('</div>');
 
