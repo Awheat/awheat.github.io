@@ -59,22 +59,21 @@
                             }
                             //1.请求数据
                             self.ajaxGetData(api,function(XMLHttpRequest){
-                                console.log("1");
                                 self.loading.addClass("loading");
-                            },function(data,textStatus){
-                                console.log("2");
+                            },function(data){
                                 self.loading.removeClass("loading");
                                 //2.渲染dom
                                 self.render(self.tab_items.eq(index),self.tpl[index],data);
                                 //3.显示元素
                                 self.switch(_this,index);
-                            },function(XMLHttpRequest,textStatus){
-                                console.log("3");
-                            },function(XMLHttpRequest,textStatus,errorThrown){
-                                console.log("4");
-                            })
+                            },function(XMLHttpRequest,textStatus){},function(XMLHttpRequest,textStatus,errorThrown){});
 
                     });
+            });
+
+            this.tab_items.on( "click", "li", function() {
+                var _this = $(this).parent("ul.album-wraper").hide().end();
+                    $(".items"+_this.index()).fadeIn();
             });
         },
         /*
@@ -109,18 +108,12 @@
 
             //1.请求数据
             this.ajaxGetData(this.api.article,function(XMLHttpRequest){
-                console.log("1");
                 self.loading.addClass("loading");
             },function(data,textStatus){
-                console.log("2");
                 self.loading.removeClass("loading");
                 var elem = self.tab_items.eq(self.index);
                 self.render(elem,self.tpl[0],data);
-            },function(XMLHttpRequest,textStatus){
-                console.log("3");
-            },function(XMLHttpRequest,textStatus,errorThrown){
-                console.log("4");
-            });
+            },function(XMLHttpRequest,textStatus){},function(XMLHttpRequest,textStatus,errorThrown){});
         }
 
     };

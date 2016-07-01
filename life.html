@@ -58,7 +58,7 @@
 				</div>
 				<div class="cont-items picture">
                     <script id="album" type="text/html">
-                        <ul class="clearfix">
+                        <ul class="album-wraper clearfix">
                         {{each list as value}}
                             <li>
                                 <figure>
@@ -70,35 +70,41 @@
                             </li>
                         {{/each}}
                         </ul>
+						<div class="album-list">
+							{{each list as value i}}
+								<div class="items{{i}}">
+									{{each value.pictures as items}}
+										<span class="js-lightbox">
+											<img src="{{items.src}}">
+											<i>{{items.descation}}</i>
+										</span>
+									{{/each}}
+								</div>
+							{{/each}}
+						</div>
                     </script>
 				</div>
-				<div class="cont-items">
-					内容建设中...
+				<div class="cont-items sounds">
+					<script id="sounds" type="text/html">
+						{{if data}}
+							{{each list as value}}
+							<li>{{value}}</li>
+							{{/each}}
+						{{/if}}
+						<h1>内容建设中...</h1>
+					</script>
 				</div>
 			</div>
 		</div>
-
-        <!-- 图片列表 -->
-        <div class="album-list">
-            <ul>
-                <li>
-                    <figure>
-                        <img src="dist/images/1.jpg">
-                        <figcaption>
-                            天青色烟雨
-                        </figcaption>
-                    </figure>
-                </li>
-            </ul>
-        </div>
-	</div>
-
+    </div>
 	<!-- footer -->
 	<div id="footer">
         © 2016 wuwangcheng. All rights reserved.
 	</div>
 </body>
+
 <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="dist/js/artTemplate.js"></script>
 <script type="text/javascript" src="dist/js/life.js"></script>
+<script type="text/javascript" src="src/js/lightbox.js"></script>
 </html>
