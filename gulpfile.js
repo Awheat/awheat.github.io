@@ -48,7 +48,7 @@ gulp.task('css', function () {
 gulp.task('js', function () {
     return gulp.src('src/js/*.js')
         //.pipe(concat('all.js'))
-        .pipe(gulp.dest('dist/js'))
+        //.pipe(gulp.dest('dist/js'))
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
