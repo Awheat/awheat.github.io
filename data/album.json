@@ -30,13 +30,8 @@
           "location":"北京"
         },
         {
-          "src":"dist/images/4.jpg",
+          "src":"dist/images/1.jpg",
           "descation":"冬雪绵绵",
-          "location":"北京"
-        },
-        {
-          "src":"dist/images/5.jpg",
-          "descation":"春色满庭",
           "location":"北京"
         }
       ]
@@ -48,22 +43,17 @@
       "num":"7",
       "pictures":[
         {
-          "src":"dist/images/5.jpg",
-          "descation":"夕阳相伴",
-          "location":"北京"
-        },
-        {
           "src":"dist/images/3.jpg",
           "descation":"策马奔腾",
           "location":"北京"
         },
         {
-          "src":"dist/images/4.jpg",
+          "src":"dist/images/2.jpg",
           "descation":"山无棱",
           "location":"北京"
         },
         {
-          "src":"dist/images/4.jpg",
+          "src":"dist/images/1.jpg",
           "descation":"天地合",
           "location":"北京"
         }
