@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>尚品-登录/注册</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery.enplaceholder.js"></script>
+	<!--[if gte IE 8]><script type="text/javascript">$(function(){$('input').placeholder();});</script><![endif]-->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//手机注册和邮箱注册切换
+			$(".wpr_form_title a").click(function(){
+				var _this = $(this),t = _this.text(),at=$(".acount");
+				if(t=="手机注册"){
+					at.find('label').text('手机：');
+					at.find('input').attr('placeholder','请输入正确的手机号');
+					_this.addClass('cur_ph').siblings().removeClass('cur_em');
+				}else if(t=="邮箱注册"){
+					at.find('label').text('邮箱：');
+					at.find('input').attr('placeholder','请输入正确的邮箱地址');
+					_this.addClass('cur_em').siblings().removeClass('cur_ph');
+				}
+			});
+			//登录注册切换
+			$(".choiceBtn").click(function(){
+				var _this=$(this),t1 = "注册新会员",t2 = "登录";
+				if(_this.text()==t1){
+					_this.text(t2);
+					$(".dv_login").animate({left:-1000},800).siblings().animate({left:56},1000);
+				}else if(_this.text()==t2){
+					_this.text(t1);
+					$(".dv_regist").animate({left:-1000},800).siblings().animate({left:56},1000);
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+<div id="Container">
+	<div class="wraper_top"><img src="images/login/logo.jpg" alt=""></div>
+	<!-- 中间部分[ -->
+	<div class="wraper_center">
+		<!-- 中间部分左边[ -->
+		<div class="wraper_center_left">
+			<!-- login登录[ -->
+			<div class="wraper_login_regist dv_login">
+				<form action="#" id="formLogin">
+					<div class="wpr_form_title"><a href="#" class="cur">登录</a></div>
+					<div class="wpr_form_cont">
+						<p><label>账号：</label>
+						   <input type="text" name="emailorphone" id="emailorphone" placeholder="请输入正确的邮箱地址或者手机号码">
+						   <span class="e_msg">账号不能为空</span>
+						</p>
+						<p><label>密码：</label>
+						   <input type="text" name="password" id="password" placeholder="请输入6-20位的密码">
+						   <span class="e_msg">密码不能为空</span>
+						</p>
+						<p class="login_btns"><button>登&nbsp;&nbsp;录</button><a href="#">忘记密码？</a></p>
+					</div>
+				</form>
+			</div><!-- ]login登录 -->
+			<!-- regist注册[ -->
+			<div class="wraper_login_regist dv_regist">
+				<form action="#" id="formRegist">
+					<div class="wpr_form_title"><a href="#" class="cur_ph phone">手机注册</a><a href="#" class="email">邮箱注册</a></div>
+					<div class="wpr_form_cont">
+						<p class="acount"><label>手机：</label>
+						   <input type="text" name="emailorphone" class="emailorphone" placeholder="请输入正确的手机号">
+						   <span class="e_msg">账号不能为空</span>
+						</p>
+						<p><label>密码：</label>
+						   <input type="text" name="password" class="password" placeholder="请输入6-20位的密码">
+						   <span class="e_msg">账号不能为空</span>
+						</p>
+						<p><label>确认密码：</label>
+						   <input type="text" name="repassword" class="repassword" placeholder="请再次输入密码">
+						   <span class="e_msg">账号不能为空</span>
+						</p>
+						<p class="verify_code"><label>验证码：</label>
+						   <input type="text" name="checkcode" class="checkcode" placeholder="请输入验证码">
+						   <span class="show_vcode">
+						   	<img src="images/login/VerifyRegisterMobileHandler.gif" alt="验证码">
+							<i>换一换</i>
+						   </span>
+						   <span class="e_msg">账号不能为空</span>
+						</p>
+						<p class="gender"><label>性别：</label>
+						   <span class="sp_gender"><input type="radio" name="gender" class="female">女士</span>
+						   <span class="sp_gender"><input type="radio" name="gender" class="male">男士</span>
+						   <span class="e_msg">账号不能为空</span>
+						</p>
+						<p class="login_btns"><button>登&nbsp;&nbsp;录</button><a href="#">忘记密码？</a></p>
+						<a href="#" class="tiaokuan">《注册条款》</a>
+					</div>
+				</form>
+			</div>
+			<!-- ]regist注册 -->
+		</div><!-- ]中间部分左边 -->
+		<script type="text/javascript">
+			$(function(){
+				var formVerify = formVerify || {};
+				var toString = Object.prototype.toString;
+				formVerify.isArray=function(r){
+					return toString.call(r)=="[object Array]";
+				}
+				formVerify.isString=function(r){
+					return toString.call(r)=="[object String]";
+				}
+				formVerify.isObject=function(r){
+					return toString.call(r)=="[object Object]";
+				}
+				formVerify.isRegExp=function(r){
+					return toString.call(r)=="[object RegExp]";
+				}
+
+				formVerify.reg={
+					email: /^[a-zA-Z0-9_\-]{1,}@[a-zA-Z0-9_\-]{1,}\.[a-zA-Z0-9_\-.]{1,}$/,
+	                phone: /^(?:13\d|15\d)\d{5}(\d{3}|\*{3})$/,
+	                noEmpty: ''
+				};
+				formVerify.route={
+					emailorphone:[formVerify.reg.email,formVerify.reg.phone],
+					password:formVerify.reg.noEmpty,
+					checkcode:"http://www.baidu.com"
+				};
+
+				formVerify.asyncVerify = true;
+				formVerify.verifyResult = true;
+
+				formVerify.verify=function(v,reg){
+					if(this.isRegExp(reg)){
+						return reg.test(v);
+					}else if(this.isArray(reg)){
+						var rs = true;
+						for(var i=0;i<reg.length;i++){
+							rs = this.verify(v,reg[i]);
+							if(rs){
+								break;
+							}
+						}
+						return rs;
+					}else if(this.isString(reg)){
+						if(reg.indexOf('http://')==0){
+
+						}
+					}
+				}
+				formVerify.init = function(){
+					for(var id in formVerify.route){
+						var _reg = formVerify.route[id];
+						$("#"+id).data('reg',_reg).blur(function(){
+							var _this=$(this);
+							var _thisV = _this.val();
+							var _thisR = _this.data('reg');
+							var f = formVerify.verify(_thisV,_thisR);
+							if(formVerify.verifyResult){
+								formVerify.verifyResult = f;
+							}
+							if(!f){
+								_this.nextAll('.e_msg').show();
+							}else{
+								_this.nextAll('.e_msg').hide();
+							}
+						});
+					}
+
+					$("#formLogin").submit(function(){
+						for(var n in formVerify.route){
+							$("#"+n).blur();
+						}
+					});
+				}
+				formVerify.init();
+			});
+		</script>
+		<!-- 中间部分右边[ -->
+		<div class="wraper_center_right">
+			<div class="wpr_cr_top">
+				<p>还没有账号？</p>
+				<span class="choiceBtn">注册新会员</span>
+			</div>
+			<p class="other_login_tips">使用合作平台登录</p>
+			<p class="other_login_cont">
+				<a href="#" class="sans_ways"></a>
+				<a href="#" class="zfb_ways"></a>
+				<a href="#" class="qq_ways"></a>
+			</p>
+			<a href="#" class="wx_banner"><img src="images/login/wx_banner.jpg" alt=""></a>
+		</div><!-- ]中间部分右边 -->
+	</div><!-- ]中间部分 -->
+	<div class="footer_infos">
+		<a href="#">
+			关于尚品
+			<span>About Us</span>
+		</a>
+		<a href="#">
+			尚品新闻
+			<span>Press Room</span>
+		</a>
+		<a href="#" class="more_width">
+			招聘信息
+			<span>Job Opportunities</span>
+		</a>
+		<a href="#">
+			品牌招商
+			<span>BD</span>
+		</a>
+		<a href="#">
+			帮助中心
+			<span>Help Center</span>
+		</a>
+		<a href="#">
+			联系我们
+			<span>Contact Us</span>
+		</a>
+		<a href="#">
+			友情链接
+			<span>Links</span>
+		</a>
+		<a href="#">
+			网站地图
+			<span>Site Map</span>
+		</a>
+		<a href="#" class="dele_border">
+			搜索直通车
+			<span>Search Result</span>
+		</a>
+	</div> 
+	<!-- footer_record[ -->
+	<div class="footer_record">
+		<a href="#">京公网安备110105001984</a>
+		<a href="#">京ICP备09087291号-2</a>
+		<a href="#">京ICP证090703号</a>
+		<i>Copyright © 2010-2015 Shangpin.com All Rights Reserved</i>
+	</div><!-- ]footer_record -->
+	<!-- footer_auth[ -->
+	<div class="footer_auth">
+		<a href="#"><img src="images/index/foot1.gif"></a>
+		<a href="#"><img src="images/index/foot2.gif"></a>
+		<a href="#"><img src="images/index/foot3.png"></a>
+		<a href="#"><img src="images/index/foot4.gif"></a>
+		<a href="#"><img src="images/index/foot5.gif"></a>
+		<a href="#"><img src="images/index/foot6.gif"></a>
+		<a href="#"><img src="images/index/foot7.jpg"></a>
+		<a href="#"><img src="images/index/foot8.gif"></a>
+	</div><!-- ]footer_auth -->
+</div>
+</body>
+</html>

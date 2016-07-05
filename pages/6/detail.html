@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/header.css">
+	<link rel="stylesheet" type="text/css" href="css/detail.css">
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/cloud-zoom.css">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/cloud-zoom.1.0.2.min.js"></script>
+</head>
+<body>
+	<div id="Container">
+	<!-- 提示信息及购物车[ -->
+	<div class="wpr_top_right">
+		<ul class="wpr_loginform">
+			<li class="wpr_login">欢迎来到尚品,<a href="#" title="登录">登录</a></li>
+			<li class="wpr_line">|</li>
+			<li><a href="#" title="注册">注册</a></li>
+			<li class="wpr_phone_sp">
+				<a href="#" title="手机尚品" class="wpr_top_cont"><i class="icon_phone"></i>手机尚品<i class="icon_arrow_down"></i></a>
+				<span class="wpr_bottom_cont1">
+					<img src="images/index/mobile.jpg" alt="扫描二维码下载尚品APP">
+				</span>
+			</li>
+			<li class="wpr_line">|</li>
+			<li class="wpr_shop_tro">
+				<a href="#" title="购物车" class="wpr_top_cont">购物车(0)<i class="icon_arrow_down"></i></a>
+				<div class="wpr_bottom_cont2">
+					<p>您的购物车中暂无商品<br>快去挑选自己钟爱的商品吧！</p>
+				</div>
+			</li>
+		</ul>
+	</div><!-- ]提示信息及购物车 -->
+	<!-- logo及搜索栏[ -->
+	<div class="wpr_midd_bar">
+		<div class="wpr_mb_download"><a href="#" title="下载尚品APP"><img src="images/index/downloadApp01.gif" alt="下载尚品APP"></a></div>
+		<div class="wpr_show_erweima">
+			<img src="images/index/mobile.jpg" alt="扫描二维码下载尚品APP"><img src="images/index/arrow_download.gif" class="icon_arrow_top">
+		</div>
+		<div class="wpr_mb_logo">
+			<a href="#" title="尚品网奢侈品_全球时尚轻奢第一站"><img src="images/index/logo_v3.jpg" alt="尚品网奢侈品_全球时尚轻奢第一站"></a>
+		</div>
+		<div class="wpr_mb_search">
+			<div class="wpr_mbs_cont"><input type="text"><button id="search_btn"></button></div>
+		</div>
+	</div><!-- ]logo及搜索栏 -->
+	<!-- 导航栏[ -->
+	<div class="wpr_nav_bar">
+		<ul class="wpr_navbar_ul clearfix">
+			<li><a href="#" title="最新">最新</a></li>
+			<li><a href="#" title="女装">女装</a></li>
+			<li><a href="#" title="男装">男装</a></li>
+			<li><a href="#" title="鞋靴">鞋靴</a></li>
+			<li><a href="#" title="箱包">箱包</a></li>
+			<li><a href="#" title="配件">配件</a></li>
+			<li><a href="#" title="家居">家居</a></li>
+			<li><a href="#" title="品牌">品牌</a></li>
+			<li><a href="#" title="尚品奥莱">尚品奥莱</a></li>
+			<li class="col_red"><a href="#" title="STYLE">STYLE</a></li>
+			<li><a href="#" title="TOPSHOP旗舰店">TOPSHOP旗舰店</a></li>
+		</ul>
+		<!-- 主菜单下的所有子菜单 -->
+		<!-- 女装[ -->
+		<div class="wpr_sub_menu">
+			<div class="wpr_subm_left">
+				<h4>热门推荐</h4>
+				<ul class="hot_new">
+					<li><a href="#">TOPSHOP新品</a></li>
+					<li><a href="#">MISS SELFRIDGE</a></li>
+					<li><a href="#">明星同款热卖单品</a></li>
+					<li><a href="#">爆款小外套推荐</a></li>
+					<li><a href="#">MO&CO.潮客范</a></li>
+					<li><a href="#">JUICY运动装</a></li>
+					<li><a href="#">春夏连衣裙上新</a></li>
+					<li><a href="#">大牌配件专场</a></li>
+					<li><a href="#">SELMARK内衣</a></li>
+				</ul>
+			</div>
+			<div class="wpr_subm_center">
+				<div class="wpr_submc_left">
+					<h4>女装</h4>
+					<ul class="hot_new">
+						<li><a href="#">全部女装</a></li>
+						<li><a href="#">外套</a></li>
+						<li><a href="#">上装</a></li>
+						<li><a href="#">连衣裙</a></li>
+						<li><a href="#">衬衫</a></li>
+						<li><a href="#">卫衣</a></li>
+						<li><a href="#">休闲西服</a></li>
+						<li><a href="#">夹克&皮衣</a></li>
+						<li><a href="#">T恤</a></li>
+						<li><a href="#">休闲运动</a></li>
+						<li><a href="#">半身裙</a></li>
+						<li><a href="#">牛仔裤</a></li>
+						<li><a href="#">休闲裤</a></li>
+						<li><a href="#">内衣</a></li>
+						<li><a href="#">家居服</a></li>
+						<li><a href="#">服饰配件</a></li>
+					</ul>
+				</div>
+				<div class="wpr_submc_center">
+				
+				</div>
+				<div class="wpr_submc_right">
+					<div class="wpr_ima_list">
+						<a href="#"><img src="images/index/nv1.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv2.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv3.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv4.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv5.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv6.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv7.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv8.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv9.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv10.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv11.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv12.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv13.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nv14.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="wpr_subm_right clearfix">
+				<div class="wpr_submr_left">
+					<h4>热门品牌</h4> 
+					<ul class="hot_new">
+						<li><a href="#">TOPSHOP</a></li>
+						<li><a href="#">MISS SELFRIDGE</a></li>
+						<li><a href="#">JUICY COUTURE</a></li>
+						<li><a href="#">CHRIS BY CHRISTOPHER</a></li>
+						<li><a href="#">MQ&CO./摩珂</a></li>
+						<li><a href="#">BURBERRY/博柏利</a></li>
+						<li><a href="#">VICTORIA'S SECRET</a></li>
+						<li><a href="#">ELEVEN PARIS</a></li>
+						<li><a href="#">OASIS / 奥时裳</a></li>
+						<li><a href="#">DVF / 黛安·冯芙丝汀宝</a></li>
+						<li><a href="#">PLAYLOUNGE</a></li>
+						<li><a href="#">HLS(Headline Seoul）</a></li>
+						<li class="all_pp"><a href="#">全部品牌A-Z ></a></li>
+					</ul>
+				</div>
+				<div class="wpr_submr_right">
+					<a href="#"><img src="images/index/nvpp1.jpg"></a>
+				</div>
+			</div>
+		</div><!-- ]女装 -->
+		<!-- 男装[ -->
+		<div class="wpr_sub_menu">
+			<div class="wpr_subm_left">
+				<h4>热门推荐</h4>
+				<ul class="hot_new">
+					<li><a href="#">春夏新款衬衫</a></li>
+					<li><a href="#">EA7夏季上新</a></li>
+					<li><a href="#">VERSACE全系列</a></li>
+					<li><a href="#">春夏上新</a></li>
+					<li><a href="#">打牌内衣new!</a></li>
+					<li><a href="#">轻薄针织衫特卖</a></li>
+					<li><a href="#">经典百搭西装</a></li>
+					<li><a href="#">春夏时尚卫衣</a></li>
+				</ul>
+			</div>
+			<div class="wpr_subm_center">
+				<div class="wpr_submc_left">
+					<h4>男装</h4>
+					<ul class="hot_new">
+						<li><a href="#">全部男装</a></li>
+						<li><a href="#">T恤</a></li>
+						<li><a href="#">POLO衫</a></li>
+						<li><a href="#">衬衫</a></li>
+						<li><a href="#">卫衣</a></li>
+						<li><a href="#">西装</a></li>
+						<li><a href="#">针织衫</a></li>
+						<li><a href="#">风衣/大衣</a></li>
+						<li><a href="#">夹克</a></li>
+						<li><a href="#">牛仔裤</a></li>
+						<li><a href="#">休闲裤</a></li>
+						<li><a href="#">西裤</a></li>
+						<li><a href="#">内衣/家居服</a></li>
+						<li><a href="#">运动/户外</a></li>
+					</ul>
+				</div>
+				<div class="wpr_submc_center">
+					<!-- <h4>男装</h4>
+					<ul class="hot_new">
+						<li><a href="#">全部女装</a></li>
+						<li><a href="#">外套</a></li>
+						<li><a href="#">上装</a></li>
+						<li><a href="#">连衣裙</a></li>
+						<li><a href="#">衬衫</a></li>
+						<li><a href="#">卫衣</a></li>
+						<li><a href="#">休闲西服</a></li>
+						<li><a href="#">夹克&皮衣</a></li>
+						<li><a href="#">T恤</a></li>
+						<li><a href="#">休闲运动</a></li>
+						<li><a href="#">半身裙</a></li>
+						<li><a href="#">牛仔裤</a></li>
+						<li><a href="#">休闲裤</a></li>
+						<li><a href="#">内衣</a></li>
+						<li><a href="#">家居服</a></li>
+						<li><a href="#">服饰配件</a></li>
+					</ul> -->
+				</div>
+				<div class="wpr_submc_right">
+					<div class="wpr_ima_list">
+						<a href="#"><img src="images/index/nan1.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan2.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan3.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan4.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan5.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan6.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan7.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan8.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan9.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan10.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan11.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan12.jpg" alt=""></a>
+						<a href="#"><img src="images/index/nan13.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="wpr_subm_right clearfix">
+				<div class="wpr_submr_left">
+					<h4>热门品牌</h4>
+					<ul class="hot_new">
+						<li><a href="#">PRADA/普拉达</a></li>
+						<li><a href="#">VERSACE/范思哲</a></li>
+						<li><a href="#">BURBERRY / 博柏利</a></li>
+						<li><a href="#">RALPH LAUREN / 拉尔夫·劳</a></li>
+						<li><a href="#">VERSACE COLLECTION</a></li>
+						<li><a href="#">ARMANI JEANS</a></li>
+						<li><a href="#">EA7</a></li>
+						<li><a href="#">KENZO / 高田贤三</a></li>
+						<li><a href="#">GIVENCHY / 纪梵希</a></li>
+						<li><a href="#">GANT / 甘特</a></li>
+						<li><a href="#">LACOSTE / 鳄鱼</a></li>
+						<li><a href="#">REPLAY </a></li>
+						<li class="all_pp"><a href="#">全部品牌A-Z ></a></li>
+					</ul> 
+				</div>
+				<div class="wpr_submr_right">
+					<a href="#"><img src="images/index/nanpp1.jpg"></a>
+				</div>
+			</div>
+		</div><!-- ]男装 -->
+		<!-- 鞋靴[ -->
+		<div class="wpr_sub_menu">
+			<div class="wpr_subm_left">
+				<h4>热门推荐</h4>
+				<ul class="hot_new">
+					<li><a href="#">菲拉格慕2015春</a></li>
+					<li><a href="#">夏新品</a></li>
+					<li><a href="#">博主私藏美鞋</a></li>
+					<li><a href="#">高街运动风</a></li>
+					<li><a href="#">春季新品豆豆鞋4折</a></li>
+					<li><a href="#">李宇春同款908元</a></li>
+					<li><a href="#">LUNA上新299起</a></li>
+					<li><a href="#">GEOX超级舒适鞋</a></li>
+				</ul>
+			</div>
+			<div class="wpr_subm_center">
+				<div class="wpr_submc_left">
+					<h4>女士鞋靴</h4>
+					<ul class="hot_new">
+						<li><a href="#">全部女式鞋靴</a></li>
+						<li><a href="#">高跟鞋</a></li>
+						<li><a href="#">芭蕾舞鞋</a></li>
+						<li><a href="#">运动鞋</a></li>
+						<li><a href="#">休闲鞋</a></li>
+						<li><a href="#">平底鞋</a></li>
+						<li><a href="#">中低跟鞋</a></li>
+						<li><a href="#">坡跟鞋</a></li>
+						<li><a href="#">凉鞋</a></li>
+						<li><a href="#">及踝鞋</a></li>
+						<li><a href="#">中筒靴</a></li>
+						<li><a href="#">雨靴</a></li>
+						<li><a href="#">童鞋</a></li>
+					</ul>
+				</div>
+				<div class="wpr_submc_center">
+					<h4>男士鞋靴</h4>
+					<ul class="hot_new">
+						<li><a href="#">全部男士鞋靴</a></li>
+						<li><a href="#">休闲运动鞋</a></li>
+						<li><a href="#">休闲皮鞋</a></li>
+						<li><a href="#">商务正装鞋</a></li>
+						<li><a href="#">商务休闲鞋</a></li>
+						<li><a href="#">豆豆鞋</a></li>
+						<li><a href="#">男士及踝靴</a></li>
+						<li><a href="#">男士及膝靴</a></li>
+						<li><a href="#">婚礼/宴会鞋</a></li>
+						<li><a href="#">家居/室内拖鞋</a></li>
+						<li><a href="#">男士运动户外鞋靴</a></li>
+					</ul>
+				</div>
+				<div class="wpr_submc_right">
+					<div class="wpr_ima_list">
+						<a href="#"><img src="images/index/xie1.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie2.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie3.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie4.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie5.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie6.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie7.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie8.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie9.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie10.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie11.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie12.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie13.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie14.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie15.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie16.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie17.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie18.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie19.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie20.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie21.jpg" alt=""></a>
+						<a href="#"><img src="images/index/xie22.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="wpr_subm_right clearfix">
+				<div class="wpr_submr_left">
+					<h4>热门品牌</h4>
+					<ul class="hot_new">
+						<li><a href="#"> ASH / 艾熙</a></li>
+						<li><a href="#">PRETTY BALLERINAS</a></li>
+						<li><a href="#">STELLA LUNA</a></li>
+						<li><a href="#">SALVATORE FERRAGAMO</a></li>
+						<li><a href="#">VALENTINO / 华伦天奴</a></li>
+						<li><a href="#">TOD'S / 托德斯</a></li>
+						<li><a href="#">MELISSA / 梅丽莎</a></li>
+						<li><a href="#">STEVE MADDEN / 思美登</a></li>
+						<li><a href="#">NINE WEST / 玖熙</a></li>
+						<li><a href="#">BOTTEGA VENETA / 葆蝶家</a></li>
+						<li><a href="#">JUMBOUGG</a></li>
+						<li><a href="#">KAT MACONIE / 凯·莫可妮 </a></li>
+						<li class="all_pp"><a href="#">全部品牌A-Z ></a></li>
+					</ul> 
+				</div>
+				<div class="wpr_submr_right">
+					<a href="#"><img src="images/index/xxpp1.jpg"></a>
+				</div>
+			</div>
+		</div><!-- ]鞋靴 -->
+		<!-- 箱包[ -->
+		<div class="wpr_sub_menu">
+			<div class="wpr_subm_left">
+				<h4>热门推荐</h4>
+				<ul class="hot_new">
+					
+				</ul>
+			</div>
+			<div class="wpr_subm_center">
+				<div class="wpr_submc_left">
+					<h4>女士箱包</h4>
+					<ul class="hot_new">
+						<li><a href="#">全部女士箱包</a></li>
+						<li><a href="#">手提包</a></li>
+						<li><a href="#">单肩包</a></li>
+						<li><a href="#">钱夹</a></li>
+						<li><a href="#">手拿包</a></li>
+						<li><a href="#">双肩包</a></li>
+						<li><a href="#">购物袋</a></li>
+						<li><a href="#">旅行箱包</a></li>
+						<li><a href="#">化妆包</a></li>
+						<li><a href="#">钥匙包</a></li>
+						<li><a href="#">名片夹</a></li>
+						<li><a href="#">斜挎包</a></li>
+						<li><a href="#">商务包</a></li>
+					</ul>
+				</div>
+				<div class="wpr_submc_center">
+					<h4>男士鞋靴</h4>
+					<ul class="hot_new">
+						<li><a href="#">全部男士箱包</a></li>
+						<li><a href="#">男士手提包</a></li>
+						<li><a href="#">男士斜挎包</a></li>
+						<li><a href="#">男士公文包</a></li>
+						<li><a href="#">男士钱夹</a></li>
+						<li><a href="#">男士电脑包</a></li>
+						<li><a href="#">男士双肩包</a></li>
+						<li><a href="#">小型配件</a></li>
+						<li><a href="#">男士钥匙包</a></li>
+						<li><a href="#">票据夹</a></li>
+						<li><a href="#">手拿/盥洗包</a></li>
+						<li><a href="#">其他箱包</a></li>
+					</ul>
+				</div>
+				<div class="wpr_submc_right">
+					<div class="wpr_ima_list">
+						<a href="#"><img src="images/index/bao1.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao2.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao3.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao4.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao5.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao6.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao7.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao8.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao9.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao10.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao11.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao12.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao13.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao14.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao15.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao16.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao17.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao18.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao19.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao20.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao21.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao22.jpg" alt=""></a>
+						<a href="#"><img src="images/index/bao23.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="wpr_subm_right clearfix">
+				<div class="wpr_submr_left">
+					<h4>热门品牌</h4>
+					<ul class="hot_new">
+						<li><a href="#">PRADA / 普拉达</a></li>
+						<li><a href="#">GUCCI / 古驰</a></li>
+						<li><a href="#">COACH / 蔻驰</a></li>
+						<li><a href="#">MCM</a></li>
+						<li><a href="#">SALVATORE FERRAGAMO</a></li>
+						<li><a href="#">MICHAEL KORS / 迈克·柯尔</a></li>
+						<li><a href="#">RIMOWA / 日默瓦</a></li>
+						<li><a href="#">LONGCHAMP / 珑骧</a></li>
+						<li><a href="#">SAINT LAURENT / 圣罗兰</a></li>
+						<li><a href="#">BURBERRY / 博柏利</a></li>
+						<li><a href="#">DIOR / 迪奥</a></li>
+						<li><a href="#">MIU MIU / 缪缪</a></li>
+						<li class="all_pp"><a href="#">全部品牌A-Z ></a></li>
+					</ul> 
+				</div>
+				<div class="wpr_submr_right">
+					<a href="#"><img src="images/index/xbpp1.jpg"></a>
+				</div>
+			</div>
+		</div><!-- 箱包[ -->
+		<!-- 配件[ -->
+		<div class="wpr_sub_menu">
+			<div class="wpr_subm_left">
+				<h4>热门推荐</h4>
+				<ul class="hot_new">
+					<li><a href="#">SWAROVSKI水晶259起</a></li>
+					<li><a href="#">赵默笙同款K金链坠仅699元</a></li>
+					<li><a href="#">刘嘉玲同款清新钻石吊坠</a></li>
+					<li><a href="#">拜占庭风情宝石项链</a></li>
+					<li><a href="#">ENZO高级彩宝799元起</a></li>
+					<li><a href="#">Ray-Ban®眼镜特卖专场</a></li>
+				</ul>
+			</div>
+			<div class="wpr_subm_center">
+				<div class="wpr_submc_left">
+					<h4>女士配件</h4>
+					<ul class="hot_new">
+						<li><a href="#">全部女士配件</a></li>
+						<li><a href="#">时尚饰品</a></li>
+						<li><a href="#">高级珠宝</a></li>
+						<li><a href="#">女士腕表</a></li>
+						<li><a href="#">太阳镜</a></li>
+						<li><a href="#">镜架</a></li>
+						<li><a href="#">服饰配件</a></li>
+						<li><a href="#">头饰</a></li>
+						<li><a href="#">礼品</a></li>
+						<li><a href="#">高级定制手机</a></li>
+					</ul>
+				</div>
+				<div class="wpr_submc_center">
+					<h4>男士配件</h4>
+					<ul class="hot_new">
+						<li><a href="#">全部男士配件</a></li>
+						<li><a href="#">男士腕表</a></li>
+						<li><a href="#">男士首饰</a></li>
+						<li><a href="#">男士服饰配件</a></li>
+						<li><a href="#">男士太阳镜</a></li>
+						<li><a href="#">男士镜架</a></li>
+						<li><a href="#">办公用品</a></li>
+						<li><a href="#">商务礼品</a></li>
+					</ul>
+				</div>
+				<div class="wpr_submc_right">
+					<div class="wpr_ima_list">
+						<a href="#"><img src="images/index/pshi1.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi2.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi3.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi4.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi5.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi6.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi7.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi8.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi9.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi10.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi11.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi12.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi13.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi14.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi15.jpg" alt=""></a>
+						<a href="#"><img src="images/index/pshi16.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="wpr_subm_right clearfix">
+				<div class="wpr_submr_left">
+					<h4>热门品牌</h4>
+					<ul class="hot_new">
+						<li><a href="#">SWAROVSKI / 施华洛世奇</a></li>
+						<li><a href="#">TIFFANY & CO. / 蒂芙尼</a></li>
+						<li><a href="#">HANAZO</a></li>
+						<li><a href="#">ROYAL GEM / 皇家珠宝</a></li>
+						<li><a href="#">DE’FILON / 妃隆</a></li>
+						<li><a href="#">MAKELUMER / 每克拉美</a></li>
+						<li><a href="#">TESIRO / 通灵珠宝</a></li>
+						<li><a href="#">F.GALLERY</a></li>
+						<li><a href="#">FOSSIL / 化石</a></li>
+						<li><a href="#">SUUNTO / 松拓</a></li>
+						<li><a href="#">Ray-Ban® / 雷朋®</a></li>
+						<li><a href="#">CROCUS</a></li>
+						<li class="all_pp"><a href="#">全部品牌A-Z ></a></li>
+					</ul>
+				</div>
+				<div class="wpr_submr_right">
+					<a href="#"><img src="images/index/pjpp1.jpg"></a>
+				</div>
+			</div>
+		</div><!-- ]配件 -->
+		<!-- 家居[ -->
+		<div class="wpr_sub_menu">
+			<div class="wpr_subm_left">
+				<h4>热门推荐</h4>
+				<ul class="hot_new">
+					<li><a href="#">BRITA专业滤水壶</a></li>
+					<li><a href="#">JBL耳机:音频大牌低价来袭</a></li>
+					<li><a href="#">绣花张,艺术的传承</a></li>
+					<li><a href="#">宠爱自己，从惠人料理开始</a></li>
+					<li><a href="#">欧西亚，健康生活的态度</a></li>
+					<li><a href="#">SANSA上上.共享人生上上签</a></li>
+					<li><a href="#">皇家梵诗锡器精品</a></li>
+					<li><a href="#">京彩家居-享受惬意的居家时光</a></li>
+				</ul>
+			</div>
+			<div class="wpr_subm_center">
+				<div class="wpr_submc_left">
+					<h4>家居</h4>
+					<ul class="hot_new">
+						<li><a href="#">全部家居</a></li>
+						<li><a href="#">床上用品</a></li>
+						<li><a href="#">餐具酒具</a></li>
+						<li><a href="#">艺术家饰</a></li>
+						<li><a href="#">居家日用</a></li>
+						<li><a href="#">厨房用具</a></li>
+						<li><a href="#">精品家电</a></li>
+						<li><a href="#">毛巾卫浴</a></li>
+						<li><a href="#">家纺布艺</a></li>
+						<li><a href="#">数码产品</a></li>
+					</ul>
+				</div>
+				<div class="wpr_submc_center">
+			
+				</div>
+				<div class="wpr_submc_right">
+					<div class="wpr_ima_list">
+						<a href="#"><img src="images/index/jju1.jpg" alt=""></a>
+						<a href="#"><img src="images/index/jju2.jpg" alt=""></a>
+						<a href="#"><img src="images/index/jju3.jpg" alt=""></a>
+						<a href="#"><img src="images/index/jju4.jpg" alt=""></a>
+						<a href="#"><img src="images/index/jju5.jpg" alt=""></a>
+						<a href="#"><img src="images/index/jju6.jpg" alt=""></a>
+						<a href="#"><img src="images/index/jju7.jpg" alt=""></a>
+						<a href="#"><img src="images/index/jju8.jpg" alt=""></a>
+						<a href="#"><img src="images/index/jju9.jpg" alt=""></a>
+					</div>
+				</div>
+			</div>
+			<div class="wpr_subm_right clearfix">
+				<div class="wpr_submr_left">
+					<h4>热门品牌</h4>
+					<ul class="hot_new">
+						<li><a href="#">5IVE SIS / 皇家·梵诗</a></li>
+						<li><a href="#">BRITA / 碧然德</a></li>
+						<li><a href="#">HUROM / 惠人</a></li>
+						<li><a href="#">SANSA / 上上</a></li>
+						<li><a href="#">ROYALROSE / 皇室玫瑰</a></li>
+						<li><a href="#">55°</a></li>
+						<li><a href="#">AIRTAMER / 爱塔梅尔</a></li>
+						<li><a href="#">ARONICA</a></li>
+						<li><a href="#">ARTLAB</a></li>
+						<li><a href="#">DAEWOO / 大宇</a></li>
+						<li><a href="#">DEMETAL / 第六金</a></li>
+						<li><a href="#">DESLON / 德世朗 </a></li>
+						<li class="all_pp"><a href="#">全部品牌A-Z ></a></li>
+					</ul>
+				</div>
+				<div class="wpr_submr_right">
+					<a href="#"><img src="images/index/jjpp1.jpg"></a>
+				</div>
+			</div>
+		</div><!-- ]家居 -->
+	</div><!-- ]导航栏 -->
+	<!-- ==================================================以上头部部分类容==================================================== -->
+	<div class="wpr_men_main">
+		<!-- 商品来自[ -->
+		<div class="form_prompt">服饰 > T恤 > 短袖T恤 > VERSACE JEANS COUTURE > 男士短袖T恤</div><!-- ]商品来自 -->
+		<!-- (Main第一块)-start -->
+		<div class="wpr_mm_top clearfix">
+			<!-- 第一块(左边)[ -->
+			<div class="wpr_mmt_left">
+				<!--zoom-section start-->
+				<div class="zoom-section">   
+					<!-- 显示大图 -->
+					<div class="zoom-small-image">
+						<a href='images/detail/b1.jpg' class = 'cloud-zoom' id='zoom1' rel="adjustX:10, adjustY:-4"><img src="images/detail/c1.jpg" alt='' title="Optional title display" /></a>
+				    </div>
+				    <span class="btn_left"></span>
+				    <span class="btn_right"></span>
+				    <!-- 显示小图 -->
+					<div class="bottom_navbar">
+						<ul class="zoom-desc">   
+						<li class="cur_spic">
+							<a href='images/detail/b1.jpg' class='cloud-zoom-gallery' title='' rel="useZoom: 'zoom1', smallImage: 'images/detail/c1.jpg' ">
+							 <img class="zoom-tiny-image" src="images/detail/s1.jpg" alt = "Thumbnail 1"/>
+				       		</a>
+						</li>
+						<li>
+							<a href='images/detail/b2.jpg' class='cloud-zoom-gallery' title='' rel="useZoom: 'zoom1', smallImage: 'images/detail/c2.jpg' ">
+				        		<img class="zoom-tiny-image" src="images/detail/s2.jpg" alt = "Thumbnail 1"/>
+				        	</a>	
+						</li>
+						<li>
+							<a href='images/detail/b3.jpg' class='cloud-zoom-gallery' title='' rel="useZoom: 'zoom1', smallImage: 'images/detail/c3.jpg' ">
+							 <img class="zoom-tiny-image" src="images/detail/s3.jpg" alt = "Thumbnail 1"/>
+				       		</a>
+						</li>
+						<li>
+							<a href='images/detail/b4.jpg' class='cloud-zoom-gallery' title='' rel="useZoom: 'zoom1', smallImage: 'images/detail/c4.jpg' ">
+							 <img class="zoom-tiny-image" src="images/detail/s4.jpg" alt = "Thumbnail 1"/>
+				       		</a>
+						</li>
+						<li style="margin-right:0px;">
+							<a href='images/detail/b5.jpg' class='cloud-zoom-gallery' title='' rel="useZoom: 'zoom1', smallImage: 'images/detail/c5.jpg' ">
+							 <img class="zoom-tiny-image" src="images/detail/s5.jpg" alt = "Thumbnail 1"/>
+				       		</a>
+						</li>
+						</ul>
+					</div>
+				</div><!--zoom-section end-->
+			</div><!-- ]第一块(左边) -->
+			<!-- 第一块(右边)[ -->
+			<div class="wpr_mmt_right">
+				<h2 class="det_ppname"><a href="#">MO&CO.</a></h2>
+				<h3 class="det_spname">蜂鸟条纹两件套连衣裙</h3>
+				<p class="det_spcode">商品编号 : 30043956</p>
+				<p class="det_oldprice">市场参考价：<del>¥1199</del></p>
+				<p class="det_newprice"> 促销价：<span>¥619</span></p>
+				<dl class="det_zhifu">
+					<dt>支付：</dt>
+					<dd>本商品支持招商银行信用卡分期</dd>
+				</dl>
+				<dl class="det_colors">
+					<dt>颜色：花卉条纹色</dt>
+					<dd>
+						<span class="clos_cur"><img src="images/detail/1.jpg"></span>
+						<span><img src="images/detail/1.jpg"></span>
+						<span><img src="images/detail/1.jpg"></span>
+					</dd>
+				</dl>
+				<p class="det_chima">
+					尺码：<span class="cm_cur">S</span><span>M</span><span>L</span><span>X</span><span>尺码测量</span>
+				</p>
+				<div class="det_num">
+					数量：<p class="det_num_top"><span>1</span><i></i></p>
+					<ul class="det_num_bottom">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li>5</li>
+						<li>6</li>
+						<li>7</li>
+						<li>8</li>
+						<li>9</li>
+						<li>10</li>
+					</ul>
+				</div>
+				<div class="det_btns"><a href="#">立即购买</a><span>加入购物车</span></div>
+				<dl class="det_shouc">
+					<dt>点击收藏</dt>
+					<dd>温馨提示： 如需退换货，需确保吊牌完整且未拆除，商品无明显穿着痕迹，详情询售后及保养栏目。 </dd>
+				</dl>
+				<div class="det_share">分享到：<a href="#" class="share_sans"></a><a href="#" class="share_renren"></a><a href="#" class="share_dou"></a></div>
+			</div><!-- ]第一块(右边) -->
+		</div><!-- (Main第一块)-end -->
+		<!-- (Main第二块)-start -->
+		<div class="wpr_mm_center clearfix">
+			<!-- 第二块(左边)[ -->
+			<div class="wpr_mmc_left">
+				<ul class="tab_menus">
+					<li class="tab1 tli_cur">商品详情</li>
+					<li class="tab2">尺码及体验</li>
+					<li class="tab3">用户评论</li>
+					<li class="tab4">保养及售后</li>
+				</ul>
+				<span class="tab_bottom_bor"></span>
+				<!-- 保养及售后 -->
+				<div class="tab4_cont" style="display:none;">
+					一、服饰类退换货说明
+
+					1.商品自签收之日起7日内可申请退换货；
+
+					2.退换货商品需确保相关配件、单据、吊牌（不能从商品上拆除）、包装、卡证等完好、齐全，不影响二次销售，否则我们将不能为您办理退换货；
+
+					3.如若申请办理的商品订单中含有赠品，您需要将赠品一同寄回；若申请办理的订单中开据了发票，您需要将发票一同寄回；
+
+					4.请务必使用外包装箱寄回商品；
+
+					5.请您使用普通快递寄回，请勿使用到付或平邮等邮寄方式，以免影响您的退换货效率；
+
+					6.请先预付快递运费，待产品质检入库后，如因产品质量原因导致的退换货，尚品网将补给您20元现金券，每个包裹最高补贴20元，暂不接受平邮与到付方式；
+
+					7.若申请办理的订单中使用了优惠券，在退货过程中，优惠券将会被拆分计算，具体信息请您留意个人账户中的订单信息提示；
+
+					8.换货商品只能针对同一商品调换，不支持商品间换货及差价换货。
+
+					 
+
+					二、以下情况无法办理退换货
+
+					1.任何已使用过的商品，商品有质量问题除外；
+
+					2.任何因非正常使用及保管导致出现质量问题的商品；
+
+					3.任何相关配件、单据、吊牌（不能从商品上拆除）、包装、卡证、发票等缺失的商品；
+
+					4.对于带有安全封条商品，如安全封条拆除或破损则无法为您办理退货，请您务必保证安全封条的完整性；
+					5.客户未经尚品网办理退货申请，直接将商品寄回尚品网，尚品网不承担保管、重新发货、退款责任，必要时尚品网有权处置滞留商品。 
+				</div>
+
+				<div class="tab_cont">
+					<!-- 商品详情 -->
+					<h3 class="tab_cont_title bigTitle1">商品详情</h3>
+					<ul class="tab_cont_cont">
+						<li><label>商品名称：</label><span>男士短袖POLO衫</span></li>
+						<li><label>原厂货号：</label><span>8313600 84444 999</span></li>
+						<li><label>商品材质：</label><span>100%棉</span></li>
+						<li><label>商品产地：</label><span>中国</span></li>
+					</ul>
+					<!-- 品牌故事 -->
+					<h3 class="tab_cont_title bigTitle2">品牌故事</h3>
+					<img src="images/detail/pp_story.jpg" class="pp_story">
+					<h1 class="tab_pp_name">MONCLER</h1>
+					<p class="tab_pp_intro">
+						蒙克莱（Moncler）是一家总部位于法国格勒诺布尔专门从事生产户外运动装备的著名品牌。Moncler品牌名来自于小镇Monestier de Clermon的缩写。Moncler的故事开始于第二次世界大战期间，品牌具有传奇历史，时至今日，Moncler在户外羽绒服业界中，成为首屈一指的国际顶尖品牌。 
+					</p>
+					<p class="tab_btns"><a href="#">进入品牌店</a>&nbsp;&nbsp;<span>关注品牌</span></p>
+					<!-- 尺码及体验 -->
+					<h3 class="tab_cont_title bigTitle3">尺码及体验</h3>
+					<table class="tab_chima" cellSpacing="0" cellPadding="0">
+						<tbody>
+							<tr><td>国际码</td><td>意大利IT</td></tr>
+							<tr><td>XS</td><td>44</td></tr>
+							<tr><td>S</td><td>46</td></tr>
+							<tr><td>M</td><td>48</td></tr>
+							<tr><td>L</td><td>50</td></tr>
+						</tbody>
+					</table>
+					<dl class="tab_tiyan">
+						<dt>风格</dt>
+						<dd>
+							<ul>
+								<li class="tiyan_cur"><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+								<li><i></i><span>运动</span></li>
+								<li><i></i><span>民族风</span></li>
+								<li><i></i><span>街头风</span></li>
+								<li><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="tab_tiyan">
+						<dt>场合</dt>
+						<dd>
+							<ul>
+								<li class="tiyan_cur"><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+								<li><i></i><span>运动</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="tab_tiyan">
+						<dt>流行元素</dt>
+						<dd>
+							<ul>
+								<li class="tiyan_cur"><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="tab_tiyan">
+						<dt>功能</dt>
+						<dd>
+							<ul>
+								<li class="tiyan_cur"><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="tab_tiyan">
+						<dt>运动户外项目</dt>
+						<dd>
+							<ul>
+								<li class="tiyan_cur"><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="tab_tiyan">
+						<dt>适用对象</dt>
+						<dd>
+							<ul>
+								<li class="tiyan_cur"><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="tab_tiyan">
+						<dt>薄厚</dt>
+						<dd>
+							<ul>
+								<li class="tiyan_cur"><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+								<li><i></i><span>运动</span></li>
+								<li><i></i><span>民族风</span></li>
+								<li><i></i><span>街头风</span></li>
+								<li><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+							</ul>
+						</dd>
+					</dl>
+					<dl class="tab_tiyan">
+						<dt>材质</dt>
+						<dd>
+							<ul>
+								<li class="tiyan_cur"><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+								<li><i></i><span>运动</span></li>
+								<li><i></i><span>民族风</span></li>
+								<li><i></i><span>街头风</span></li>
+								<li><i></i><span>休闲</span></li>
+								<li><i></i><span>简约</span></li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+			</div><!-- ]第二块(左边) -->
+			<!-- 第二块(右边)[ -->
+			<div class="wpr_mmc_right">
+				<h3>您可能喜欢</h3>
+				<div class="product_items">
+					<img src="images/men/yi3.jpg">
+					<a href="#" class="pp_name"><strong>MONCLER</strong></a>
+					<a href="#" class="sp_name">【15夏季新款】男士短袖POLO衫 </a>
+					<p class="sp_price"><span>￥1099</span><del>￥1650</del></p>
+				</div>
+				<div class="product_items">
+					<img src="images/men/yi3.jpg">
+					<a href="#" class="pp_name"><strong>MONCLER</strong></a>
+					<a href="#" class="sp_name">【15夏季新款】男士短袖POLO衫 </a>
+					<p class="sp_price"><span>￥1099</span><del>￥1650</del></p>
+				</div>
+				<div class="product_items">
+					<img src="images/men/yi3.jpg">
+					<a href="#" class="pp_name"><strong>MONCLER</strong></a>
+					<a href="#" class="sp_name">【15夏季新款】男士短袖POLO衫 </a>
+					<p class="sp_price"><span>￥1099</span><del>￥1650</del></p>
+				</div>
+			</div><!-- ]第二块(右边) -->
+		</div><!-- (Main第二块)-end -->
+		<!-- (Main第三块)-start -->
+		<div class="wpr_mm_bottom">
+			<h3 class="tab_cont_title bigTitle4">用户评论</h3>
+			<!-- 第三块-(上边)[ -->
+			<div class="wpr_mmb_top">
+				<ul class="tab_pinglun">
+					<li class="tabpl1 tpj_cur">全部(0)</li>
+					<li class="tabpl2">有图片(0)</li>
+					<li class="tabpl3">该品牌其他商品最新评论</li>
+				</ul>
+				<div class="tpj_cont1 tpjdiv_cur">111</div>
+				<div class="tpj_cont2">222</div>
+				<div class="tpj_cont3">333</div>
+			</div><!-- ]第三块-(上边) -->
+			<h3 class="tab_cont_title bigTitle5">您浏览过的商品</h3>
+			<!-- 第三块-(下边)[ -->
+			<div class="wpr_mmb_center">
+				<div class="product_items">
+					<img src="images/men/yi3.jpg">
+					<a href="#" class="pp_name"><strong>MONCLER</strong></a>
+					<a href="#" class="sp_name">【15夏季新款】男士短袖POLO衫 </a>
+					<p class="sp_price"><span>￥1099</span><del>￥1650</del></p>
+				</div>
+				<div class="product_items">
+					<img src="images/men/yi3.jpg">
+					<a href="#" class="pp_name"><strong>MONCLER</strong></a>
+					<a href="#" class="sp_name">【15夏季新款】男士短袖POLO衫 </a>
+					<p class="sp_price"><span>￥1099</span><del>￥1650</del></p>
+				</div>
+				<div class="product_items">
+					<img src="images/men/yi3.jpg">
+					<a href="#" class="pp_name"><strong>MONCLER</strong></a>
+					<a href="#" class="sp_name">【15夏季新款】男士短袖POLO衫 </a>
+					<p class="sp_price"><span>￥1099</span><del>￥1650</del></p>
+				</div>
+			</div><!-- ]第三块-(下边) -->
+		</div><!-- (Main第三块)-end -->
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			//商品展示当前图片的选中效果
+			$(".zoom-tiny-image").click(function(){
+				var ind = $(this).parent().parent().index();
+				$(".zoom-desc li").eq(ind).addClass('cur_spic').siblings().removeClass('cur_spic');
+			});
+			//显示数量的子菜单
+			$(".det_num_top").click(function(){$(this).next('ul').slideDown();});
+			//颜色的当前选中效果
+			$(".det_colors dd span").click(function(){$(this).addClass("clos_cur").siblings().removeClass("clos_cur");});
+			//尺码的当前选中效果
+			$(".det_chima span").click(function(){$(this).addClass("cm_cur").siblings().removeClass("cm_cur");});
+			//页面文档绑定的一个点击事件
+			$(document).click(function(){$(".det_num_bottom").hide();});
+			//表格行添加背景颜色
+			$(".tab_chima tbody tr:even").addClass('odd');
+
+			
+			//alert($(".bigTitle5").offset().top);
+
+			/*
+				选项卡1
+			*/
+			$(".tab_menus li").click(function(){
+				var scrollHeight = $(window).scrollTop(810);
+				tabMenusPos(scrollHeight);
+				var _this = $(this),tab4 = $(".tab4_cont");
+				_this.addClass('tli_cur').siblings().removeClass('tli_cur');
+				if(_this.text()=='商品详情'){
+					scrollHeight = $(window).scrollTop(810);
+					tabThisCont(scrollHeight);
+					tab4.hide().siblings('div').show();
+				}else if(_this.text()=='尺码及体验'){
+					scrollHeight = $(window).scrollTop(1448);
+					tabThisCont(scrollHeight);
+					tab4.hide().siblings('div').show();
+				}else if(_this.text()=='用户评论'){
+					scrollHeight = $(window).scrollTop(2164);
+					tabThisCont(scrollHeight);
+					tab4.hide().siblings('div').show();
+				}else if(_this.text()=='保养及售后'){
+					tab4.show().siblings('div').hide();
+					scrollHeight = $(window).scrollTop(810);
+					tabMenusPos(scrollHeight);
+				}else{
+					tab4.hide().siblings('div').show();
+				}
+			});
+			/*
+				tab选项卡1滚动条监听事件
+			*/
+			$(window).bind("scroll",function(){
+				var scrollHeight = $(window).scrollTop();
+				tabMenusPos(scrollHeight);
+				tabThisCont(scrollHeight);
+			});
+			/*
+				选项卡2
+			*/
+			$(".tab_pinglun li").click(function(){
+				var _this = $(this),ind =_this.index();
+				_this.addClass('tpj_cur').siblings().removeClass('tpj_cur');
+				$(".wpr_mmb_top div").eq(ind).addClass('tpjdiv_cur').show().siblings('div').removeClass('tpjdiv_cur').hide();
+			});
+		});
+		/*
+			tab选项卡的位置定死
+		*/
+		function tabMenusPos(scrollPosTop){
+			var o = $(".tab_menus"),n=$(".tab_bottom_bor"),w=$(".tab4_cont");
+			if(scrollPosTop>810){
+				o.css({position:'fixed',width:'720px',top:'0px'});
+				n.css({position:'fixed',width:'720px',top:'31px'});
+				w.css({position:'fixed',width:'720px',top:'32px'});	
+			}else{
+				o.css({position:'relative'});
+				n.css({position:'absolute'});
+				w.css({position:'absolute'});
+			}
+		}
+		/*
+			滚动到内容区域给当前的tab选项卡添加当前样式
+		*/
+		function tabThisCont(scrollPosTop){
+			if(scrollPosTop>810 && scrollPosTop<1447){
+				$(".tab1").addClass('tli_cur').siblings().removeClass('tli_cur');
+			}else if(scrollPosTop>1447 && scrollPosTop<2164){
+				$(".tab2").addClass('tli_cur').siblings().removeClass('tli_cur');
+			}else if(scrollPosTop>2164 && scrollPosTop <2568){
+				$(".tab3").addClass('tli_cur').siblings().removeClass('tli_cur');
+			}
+		}
+	</script>
+	<!-- ==================================================以上尾部部分类容==================================================== -->
+	<!-- 用户帮助[ -->
+	<div class="footer_userhelp">
+		<dl>
+			<dt>
+				<p>新手上路</p>
+				<p>Tour Guide</p>
+			</dt>
+			<dd>
+				<a href="#">购物流程</a>
+				<a href="#">发票制度</a>
+				<a href="#">会员介绍</a>
+				<a href="#">找回密码</a>
+				<a href="#">订单查询</a>
+				<a href="#">优惠券使用</a>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<p>支付方式 </p>
+				<p>Payment Methods</p>
+			</dt>
+			<dd>
+				<a href="#">在线支付</a>
+				<a href="#">货到付款</a>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<p>配送说明</p>
+				<p>Shipping & Delivery</p>
+			</dt>
+			<dd>
+				<a href="#">配送方式</a>
+				<a href="#">配送范围</a>
+				<a href="#">运费说明</a>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				<p>售后服务</p>
+				<p>Return Policy</p>
+			</dt>
+			<dd>
+				<a href="#">退换货流程</a>
+				<a href="#">退换货政策</a>
+				<a href="#">售后维修</a>
+				<a href="#">退款说明</a>
+			</dd>
+		</dl>
+		<dl>
+			<dt>
+				扫描尚品二维码
+			</dt>
+			<dd>
+				<a href="#"><img src="images/index/footer_tdc.png"></a>
+				<a href="#" class="download_khd">下载手机客户端</a>
+			</dd>
+		</dl>
+		<dl id="userhelp_service">
+			<dd class="uh_sve_top">
+				<a href="#" class="weixin">尚品网官方微信</a>
+				<a href="#" class="weibo">尚品网官方微博</a>
+			</dd>
+			<dd class="uh_sve_center">
+				<a href="#">客户服务热线 Customer service hotline </a>
+				<a href="#"><strong>4006-900-900</strong></a>
+				<a href="#">（早08:00-晚22:00）</a>
+			</dd>
+			<dd class="uh_sve_bottom"><a href="#"></a></dd>
+		</dl>
+	</div><!-- ]用户帮助 -->
+	<!-- 用户承诺[ -->
+	<div class="footer_promise">
+		<a href="#" class="footer_zp"></a>
+		<a href="#" class="footer_free"></a>
+		<a href="#" class="footer_tui"></a>
+	</div><!-- ]用户承诺 -->
+	<div class="footer_infos">
+		<a href="#">
+			关于尚品
+			<span>About Us</span>
+		</a>
+		<a href="#">
+			尚品新闻
+			<span>Press Room</span>
+		</a>
+		<a href="#" class="more_width">
+			招聘信息
+			<span>Job Opportunities</span>
+		</a>
+		<a href="#">
+			品牌招商
+			<span>BD</span>
+		</a>
+		<a href="#">
+			帮助中心
+			<span>Help Center</span>
+		</a>
+		<a href="#">
+			联系我们
+			<span>Contact Us</span>
+		</a>
+		<a href="#">
+			友情链接
+			<span>Links</span>
+		</a>
+		<a href="#">
+			网站地图
+			<span>Site Map</span>
+		</a>
+		<a href="#" class="dele_border">
+			搜索直通车
+			<span>Search Result</span>
+		</a>
+	</div> 
+	<!-- footer_record[ -->
+	<div class="footer_record">
+		<a href="#">京公网安备110105001984</a>
+		<a href="#">京ICP备09087291号-2</a>
+		<a href="#">京ICP证090703号</a>
+		<i>Copyright © 2010-2015 Shangpin.com All Rights Reserved</i>
+	</div><!-- ]footer_record -->
+	<!-- footer_auth[ -->
+	<div class="footer_auth">
+		<a href="#"><img src="images/index/foot1.gif"></a>
+		<a href="#"><img src="images/index/foot2.gif"></a>
+		<a href="#"><img src="images/index/foot3.png"></a>
+		<a href="#"><img src="images/index/foot4.gif"></a>
+		<a href="#"><img src="images/index/foot5.gif"></a>
+		<a href="#"><img src="images/index/foot6.gif"></a>
+		<a href="#"><img src="images/index/foot7.jpg"></a>
+		<a href="#"><img src="images/index/foot8.gif"></a>
+	</div><!-- ]footer_auth -->
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

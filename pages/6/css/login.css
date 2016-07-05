@@ -1,0 +1,77 @@
+/*
++---------------------------------------------------------------------
++  @Name:    尚品登录样式;
++  @Date:    2015/05/.. PM
++  @Author:  wuwangcheng
++  @Email:   395212731@qq.com
++  @Address: zhongqinghuayun
++---------------------------------------------------------------------
+*/
+#Container{width:960px;height: 1000px;margin:0px auto;}
+/*
+	wraper_top
+*/
+.wraper_top{width: 100%;height: 40px;padding: 20px 0px;text-align: center;}
+/*
+	wraper_center
+*/
+.wraper_center{width: 100%;height: 500px;margin-bottom: 36px;border:1px solid #e7e7e7;border-radius:5px;-moz-border-radius:5px;-webkit-border-radius:5px;-o-border-radius:5px;}
+/*
+	left
+*/
+.wraper_center .wraper_center_left{position: relative;width:643px;height: 100%;float: left;overflow: hidden;}
+/*
+	login登录
+*/
+.wraper_center .wraper_center_left .wraper_login_regist{position: absolute;width:570px;height: 300px;top: 35px;left: 56px;}
+.wraper_center .wraper_center_left .dv_login{;}
+.wraper_center .wraper_center_left .dv_regist{top: 35px;left: -1000px;}
+.wpr_form_title{width: 100%;height:auto;padding-left: 30px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;border-bottom:1px solid #ccc;}
+.wpr_form_title a{display:inline-block;padding: 0px 20px 0px 45px;height:27px;line-height:27px;color: #999999;margin-right: 20px;border-top-left-radius: 5px;border-top-right-radius: 5px;background: url("../images/login/pic_img.png") no-repeat;background-position: 12px -175px;}
+.wpr_form_title a.phone{background: url("../images/login/pic_img.png") no-repeat;background-position: 10px -29px;}
+.wpr_form_title a.email{background: url("../images/login/pic_img.png") no-repeat;background-position: 5px -112px;}
+.wpr_form_title a.cur{color: #fff;outline: none;background-color:#b3afaf;}
+.wpr_form_title a.cur_em{color: #fff;outline: none;background: url("../images/login/pic_img.png") no-repeat;background-position: 5px -82px;background-color:#b3afaf;}
+.wpr_form_title a.cur_ph{color: #fff;outline: none;background: url("../images/login/pic_img.png") no-repeat;background-position: 10px -4px;background-color:#b3afaf;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont{width:100%;margin-top: 30px;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p{width: 100%;height: 58px;vertical-align: middle;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p label{display: block;float: left;width:80px;height: 58px;line-height:33px;color: #666;font-size: 12px;text-align: right;padding-right: 10px;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p input{display: block;float: left;width:222px;height: 18px;line-height: 18px;padding:8px 10px;font-family: "微软雅黑";border:1px solid #b1adaa;border-radius: 3px;}
+/*
+	验证码
+*/
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p.verify_code input{width:110px;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p.verify_code span.show_vcode{display: block;width:100px;height: 34px;float: left;padding-left:10px;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p.verify_code span.show_vcode img{display:block;width: 58px;height: 24px;float: left;margin-top:5px;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p.verify_code span.show_vcode i{display:block;float: right;margin-top:7px;font-style: normal;}
+/*
+	性别
+*/
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p.gender .sp_gender{display: block;width:70px;height: 35px;line-height: 33px;float: left;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p.gender .sp_gender input{width:auto;margin-top: 8px;margin-right:5px;border:0 none;margin-top:2px\9;margin-right: 2px\9;}
+/*
+	条款
+*/
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont a.tiaokuan{display: block;color: #2f9be7;margin:-20px 0px 0px 80px;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p span.e_msg{display: block;float: left;width: 150px;height:38px;color: #ed4747;line-height: 35px;padding-left:30px;display: none;background: url("../images/login/sp.gif") no-repeat;background-position:8px -1040px;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p.login_btns button{width: 242px;height:36px;line-height: 36px;border:0 none;color: #fff;font-size: 14px;font-family: "微软雅黑";margin-left:90px;background-color: #c62026;transition:background-color 0.5s ease-out 0s;-moz-transition:background-color 0.5s ease-out 0s;-webkit-transition:background-color 0.5s ease-out 0s;-o-transition:background-color 0.5s ease-out 0s;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p.login_btns button:hover{background-color:#c65036;}
+.wraper_center .wraper_center_left .wraper_login_regist .wpr_form_cont p.login_btns a{padding-left:15px;padding-top: 3px;color: #459adb;}
+/*
+	regist 注册
+*/
+.wraper_center_left .wraper_regist{width:570px;height: 300px;margin: 35px 0px 0px 56px;}
+/*
+	right
+*/
+.wraper_center .wraper_center_right{position: relative;width:300px;height: 100%;float: right;padding:0px 37px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;border-left: 1px solid #e7e7e7;background: linear-gradient(#fff, #ededed) repeat scroll 0 0 #f2f2f2;}
+.wraper_center .wraper_center_right .wpr_cr_top{width: 100%;height:auto;padding:40px 0px 20px 0px;border-bottom: 1px dotted #000;}
+.wraper_center .wraper_center_right .wpr_cr_top p{height:40px;line-height:40px;}
+.wraper_center .wraper_center_right .wpr_cr_top span{display: block;width: 100%;height: 30px;line-height:28px;text-align: center;cursor: pointer;color: #333;font-size:15px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;border:1px solid #dfdfdf;background-color:#f2f2f2;}
+.wraper_center .wraper_center_right .other_login_tips{width: 100%;height: 40px;line-height: 40px;}
+.wraper_center .wraper_center_right .other_login_cont{width: 100%;}
+.wraper_center .wraper_center_right .other_login_cont a{display: block;width: 104px;height: 25px;float: left;overflow: hidden;margin-right:8px;margin-bottom: 10px;}
+.wraper_center .wraper_center_right .other_login_cont a.sans_ways{background: url("../images/login/login_ico.gif");background-position: 0px 0px;}
+.wraper_center .wraper_center_right .other_login_cont a.zfb_ways{background: url("../images/login/login_ico.gif");background-position: 0px -27px;}
+.wraper_center .wraper_center_right .other_login_cont a.qq_ways{background: url("../images/login/login_ico.gif");background-position: 0px -53px;}
+.wraper_center .wraper_center_right .wx_banner{display: block;position: absolute;width: 270px;height: 210px;left: 15px;bottom: 30px;}
