@@ -139,7 +139,7 @@
             this.wraper.stop().animate({
                 left:-this.sliderWidth*index
             },500,function(){
-                if(index == 5) index = 1;
+                if(index == 4) index = 1;
                 self.controll.find("span").eq(index-1).addClass("active").siblings("span").removeClass("active");
             });
         }
