@@ -47,8 +47,13 @@
 					</div>
 					<div class="items clearfix">
 						<div class="sign"></div>
-						<div class="items-date">2016-05  至 2016-07</div>
+						<div class="items-date">2016-05  至 2016-10</div>
 						<div class="items-text">北京中青华云新媒体科技有限公司-WEB前端</div>
+					</div>
+					<div class="items clearfix">
+						<div class="sign"></div>
+						<div class="items-date">2016-11 / 至今</div>
+						<div class="items-text">北京证联资本管理有限责任公司-WEB前端</div>
 					</div>
 				</div>
 			</div>
