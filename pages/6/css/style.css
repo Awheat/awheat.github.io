@@ -1,0 +1,38 @@
+/*初始化*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;word-break:break-all;/*英文字母很长的时候会不受约束(解决这个问题)*/
+background:transparent;}
+article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary{display: block;}
+/*基础设置*/
+html{font-size: 100%;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}
+body{width: 100%;font-family: "Microsoft Yahei", Helvetica, Arial, sans-serif;font-size: 12px;}
+ul{list-style: none;}
+ul li{list-style: none;}
+a{margin: 0;padding: 0;border: 0;font-size: 100%;vertical-align: baseline;background: transparent;text-decoration: none;}
+a:focus{outline: thin dotted #333;outline: 5px auto -webkit-focus-ring-color;outline-offset: -2px;}
+a:hover,
+a:active{outline:none;}
+img{max-width: 100%;width: auto\9;vertical-align: middle;border: 0;-ms-interpolation-mode: bicubic;}
+*:link,*:visited,*:hover,*:active,*:focus,.easing{-webkit-transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;transition: color 0.1s linear, background-color 0.1s linear, border-color 0.1s linear;}
+button,input,select,textarea{margin: 0;font-size: 100%;vertical-align: middle;}
+button,input{*overflow: visible;line-height: normal;}
+button::-moz-focus-inner,
+input::-moz-focus-inner{padding: 0;border: 0;}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"]{-webkit-appearance: button;cursor: pointer;}
+label,
+select,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+input[type="radio"],
+input[type="checkbox"]{cursor: pointer;}
+textarea{overflow: auto;vertical-align: top;}
+/*清楚浮动使得*/
+.clearfix{*zoom: 1;}
+.clearfix:before,
+.clearfix:after{display: table;content: "";line-height: 0;}
+.clearfix:after{clear: both;}
+#Container{width:960px;height:auto;margin: 0px auto;background: #fff;}

@@ -1,0 +1,98 @@
+/*
++---------------------------------------------------------------------
++  @Name:    尚品头部公共样式;
++  @Date:    2015/05/.. PM
++  @Author:  wuwangcheng
++  @Email:   395212731@qq.com
++  @Address: zhongqinghuayun
++---------------------------------------------------------------------
+*/
+/*
+	wpr_top_right
+*/
+.wpr_top_right{width: 100%;height: 30px;}
+.wpr_top_right .wpr_loginform{float: right;}
+.wpr_top_right .wpr_loginform li{float: left;line-height: 30px;cursor: pointer;}
+.wpr_top_right .wpr_loginform li a{padding: 0px 5px;color: #666;}
+.wpr_top_right .wpr_loginform .wpr_line{padding:0px 2px;color: #666;}
+/*
+	手机尚品
+*/
+.wpr_top_right .wpr_loginform .wpr_phone_sp{position: relative;width:98px;height:29px;border-right:1px solid #fff;border-left: 1px solid #fff;border-top: 1px solid #fff;}
+.wpr_top_right .wpr_loginform .wpr_phone_sp a.wpr_top_cont{display: inline-block;position: absolute;width: 100%;height:29px;top: 0px;left: 0px;z-index:510;text-indent:25px;padding: 0px;background: url("../images/index/sp_newHeader.gif") -218px -874px no-repeat;transition:background 0.15s linear 0s;-moz-transition:background 0.15s linear 0s;-webkit-transition:background 0.15s linear 0s;-o-transition:background 0.1s linear 0s;}
+.wpr_top_right .wpr_loginform .wpr_phone_sp .wpr_bottom_cont1{display: inline-block;position: absolute;width:186px;height:149px;top:28px;left:-109px;z-index:500;padding: 10px;cursor: pointer;background: #fff;border:1px solid #000;}
+.wpr_top_right .wpr_loginform .wpr_phone_sp .icon_arrow_down,
+.wpr_top_right .wpr_loginform .wpr_shop_tro .icon_arrow_down{display:inline-block;width:10px;height:7px;margin-left: 5px;background: url("../images/index/arrow_triangle-down.png") no-repeat;transition:transform 0.3s ease-in 0s;-moz-transition:transform 0.3s ease-in 0s;-webkit-transition:transform 0.3s ease-in 0s;-o-transition:transform 0.3s ease-in 0s;}
+.wpr_top_right .wpr_loginform .wpr_phone_sp:hover a.wpr_top_cont,
+.wpr_top_right .wpr_loginform .wpr_shop_tro:hover a.wpr_top_cont{background-color: #fff;/*因为设置了背景图片所以这里只能用background-color(注意这个问题对z-index有影响)*/;}
+.wpr_top_right .wpr_loginform .wpr_phone_sp:hover,
+.wpr_top_right .wpr_loginform .wpr_shop_tro:hover{border-right:1px solid #000;border-left: 1px solid #000;border-top:1px solid #000;}
+.wpr_top_right .wpr_loginform .wpr_phone_sp:hover .wpr_top_cont{background: url("../images/index/sp_newHeader.gif") -218px -913px no-repeat;}
+.wpr_top_right .wpr_loginform .wpr_shop_tro:hover .icon_arrow_down,
+.wpr_top_right .wpr_loginform .wpr_phone_sp:hover .icon_arrow_down{transform:rotate(180deg);transform-orign:50% 50% 0;transition:transform 0.2s ease-in 0s;}
+/*
+	购物车
+*/
+.wpr_top_right .wpr_loginform .wpr_shop_tro{position:relative;width:118px;height:29px;border-right:1px solid #fff;border-left: 1px solid #fff;border-top: 1px solid #fff;}
+.wpr_top_right .wpr_loginform .wpr_shop_tro a.wpr_top_cont{display:block;position: absolute;width: 100%;height:29px;top: 0px;left: 0px;z-index:2;text-indent:35px;padding: 0px;background: url("../images/index/sp_newHeader.gif") -206px 3px no-repeat;background-color: #fff;}
+.wpr_top_right .wpr_loginform .wpr_shop_tro .wpr_bottom_cont2{display: inline-block;position: absolute;width:300px;height:88px;top:28px;left:-203px;z-index:1;padding: 10px;background: #fff;border:1px solid #000;}
+.wpr_top_right .wpr_loginform .wpr_shop_tro .wpr_bottom_cont2 p{text-align: center;line-height: 20px;padding-top: 20px;}
+/*
+	网站logo及搜索
+*/
+.wpr_midd_bar{width: 100%;height: 50px;padding: 10px 0px;position: relative;}
+.wpr_midd_bar .wpr_mb_download{position: absolute;width: 220px;height: 90px;bottom: 0px;left: 0px;}
+.wpr_midd_bar .wpr_show_erweima{position: absolute;width: 186px;height: 149px;padding: 10px;top:80px;left: 0px;z-index: 5;display: none;background: #fff;border:1px solid #000;}
+.wpr_midd_bar .wpr_show_erweima img.icon_arrow_top{display:block;position: absolute;width: 15px;height: 8px;top:-8px;left:13px;z-index: 10px;}
+.wpr_midd_bar .wpr_mb_logo{width: 230px;height: 50px;margin: 0px auto;}
+.wpr_midd_bar .wpr_mb_search{position: absolute;top:15px;right: 0px;padding:10px 10px;}
+.wpr_midd_bar .wpr_mb_search .wpr_mbs_cont{position: relative;}
+.wpr_midd_bar .wpr_mb_search .wpr_mbs_cont input{width:178px;height: 20px;line-height: 20px;padding: 1px 0px 1px 10px;border:1px solid #999;border-right: none;}
+.wpr_midd_bar .wpr_mb_search .wpr_mbs_cont #search_btn{width: 22px;height: 24px;border:1px solid #999;border-left: none;background: url("../images/index/search_newBg.png") no-repeat;}
+/*
+	导航栏
+*/
+.wpr_nav_bar{width: 100%;position: relative;}
+.wpr_nav_bar .wpr_navbar_ul{width: 100%;height: auto;border-bottom: 2px solid #000;}
+.wpr_nav_bar .wpr_navbar_ul li{float: left;}
+.wpr_nav_bar .wpr_navbar_ul li a{display:block;padding:0px 24px;height:28px;line-height:30px;color: #000;font-size: 14px;text-align: center;}
+.wpr_nav_bar .wpr_navbar_ul li a.this_select{color: #fff;background: #000;}
+.wpr_nav_bar .wpr_navbar_ul li.col_red a.this_select1{color: #fff;background: #de4747;}
+.wpr_nav_bar .wpr_navbar_ul li.col_red a{color: #de4747;}
+/*
+	导航栏下隐藏的子菜单
+*/
+.wpr_nav_bar .wpr_sub_menu{position:absolute;width: 100%;height: 380px;top:30px;left: 0px;padding: 15px;border:1px solid #000;border-top: none;display: none;z-index: 100000;background: #fff;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;}
+/*
+	wpr_subm_left
+*/
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_left{width: 120px;height: 100%;float: left;padding-right:10px;}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_left h4,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_left h4,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_center h4,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_right .wpr_submr_left h4{padding-bottom:10px;}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_left ul li,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_left ul li,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_center ul li,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_right .wpr_submr_left ul li{line-height: 20px;}
+.wpr_nav_bar .wpr_sub_menu li.all_pp{padding-top:20px;}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_left ul li a,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_left ul li a,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_center ul li a,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_right .wpr_submr_left ul li a{color: #000;font-family:"微软雅黑","Microsoft YaHei","Tahoma",Arial,"宋体";}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_left ul li a:hover,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_left ul li a:hover,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_center ul li a:hover,
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_right .wpr_submr_left ul li a:hover{font-weight: bold;}
+/*
+	wpr_subm_center
+*/
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center{width:415px;height: 100%;float: left;border-right: 1px dotted #000;border-left: 1px dotted #000;}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_left{width:94px;height: 100%;float: left;padding-left: 15px;}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_center{width:94px;height: 100%;float: left;padding-left: 15px;}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_right{width: 175px;height: 100%;float: left;padding: 0px 10px;}
+.wpr_ima_list{width: 174px;height: 232px;overflow: hidden;}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_center .wpr_submc_right a{display: block;float: left;}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_right{width: 381px;height: 100%;float: left;}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_right .wpr_submr_left{width:160px;height: 100%;float: left;padding: 0px 10px;}
+.wpr_nav_bar .wpr_sub_menu .wpr_subm_right .wpr_submr_right{width:180px;height: 100%;float: right;padding: 0px 10px;}
