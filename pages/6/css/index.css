@@ -1,0 +1,157 @@
+
+/*
++---------------------------------------------------------------------
++  @Name:    尚品首页样式;
++  @Date:    2015/04/09 PM
++  @Author:  wuwangcheng
++  @Email:   395212731@qq.com
++  @Address: zhongqinghuayun
++---------------------------------------------------------------------
+*/
+
+/*
+	焦点
+*/
+#slider{width:960px;height:470px;position:relative;margin-left: auto;margin-right: auto;margin-top:2px;overflow:hidden;}
+#slider a img{width:100%;height:470px;border: 0px;}
+/*
+	正在加载的一个效果
+*/
+img.load_img{display: block;position: absolute;width: 31px;height: 31px;top:50%;left:50%;z-index: 10000;}
+#slider .nivo-directionNav a,
+#slider3 .nivo-directionNav a{display:block;width:26px;height:100%;position:absolute;top:0px;border:0;opacity: 1;z-index: 1000;cursor: pointer;background: url("../images/index/lr_arrow.png") no-repeat;}
+.nivoSlider a.nivo-imageLink{border: 0 none;display: none;height: 100%;left: 0;margin: 0;padding: 0;position: absolute;top: 0;width: 100%;z-index: 60;}
+#slider .nivo-directionNav a.nivo-prevNav,
+#slider3 .nivo-directionNav a.nivo-prevNav{background-position: 0px center;left: 0px;}
+#slider .nivo-directionNav a.nivo-nextNav,
+#slider3 .nivo-directionNav a.nivo-nextNav{background-position:-174px center;right: 0px;}
+a.nivo-nextNav,
+a.nivo-prevNav{text-indent: -99999px;}
+/*
+	wraper_column1
+*/
+#Container .wraper_column1{width: 100%;height: auto;}
+/*
+	wpr_col_top
+*/
+#Container .wraper_column1 .wpr_col_top{width: 100%;border-bottom: 1px solid #000;}
+#Container .wraper_column1 .wpr_col_top .wpr_colt_left{width: auto;height: 40px;line-height: 50px;float: left;}
+#Container .wraper_column1 .wpr_col_top .wpr_colt_left span{color: #717171;font-size: 16px;cursor: pointer;}
+#Container .wraper_column1 .wpr_col_top .wpr_colt_left span.curr{color: #000;}
+#Container .wraper_column1 .wpr_col_top .wpr_colt_left .verticl_line{display: inline-block;height: 10px;padding: 0px 10px;}
+#Container .wraper_column1 .wpr_col_top .wpr_colt_right{display:block;width: auto;height: 40px;line-height:60px;float: right;color: #717171;}
+#Container .wraper_column1 .wpr_col_top .wpr_colt_right:hover{color: #212121;}
+/*
+	wpr_col_bottom
+*/
+#Container .wraper_column1 .wpr_col_bottom_list .wpr_col_bottom{width: 100%;height:280px;padding: 2px 0px;}
+#Container .wraper_column1 .wpr_col_bottom_list .wpr_col_bottom .wpr_colb_left{width:792px;height: 100%;float: left;}
+#Container .wraper_column1 .wpr_col_bottom_list .wpr_col_bottom .wpr_colb_left li{float: left;width:132px;height: 62px;padding: 0px 0px 3px;}
+#Container .wraper_column1 .wpr_col_bottom_list .wpr_col_bottom .wpr_colb_right{width: 168px;height:260px;float:right;}
+/*
+	品牌下的焦点
+*/
+#slider1,
+#silder2{width:168px;height:260px;background:url("../images/index/loading.gif") no-repeat 50% 50%;}
+#slider1 img,
+#silder2 img{width: 168px;height: 260px;border:0px;}
+.nivo-controlNav{position: absolute;width: 168px;height: 20px;right: 0px;bottom: -20px;text-align: center;}
+.nivo-controlNav a{display:inline-block;width:15px;height:15px;background:url("../images/index/pic_dot.gif") no-repeat;background-position: -12px 4px;text-indent:-9999px;border:0;}
+.nivo-controlNav a.active{background-position:4px 4px;}
+/*
+	最新上架
+*/
+#Container .wraper_column2{width: 100%;height: auto;}
+#Container .wraper_column2 .wpr_col2_top{width: 100%;height: auto;border-bottom: 1px solid #000;}
+#Container .wraper_column2 .wpr_col2_top span{display: inline-block;float: left;height: 40px;line-height: 50px;}
+#Container .wraper_column2 .wpr_col2_top span.newest_sj{color:#000;font-size: 16px;}
+#Container .wraper_column2 .wpr_col2_top span.time_sj{padding-left: 20px;color:#717171;font-size: 14px;}
+#Container .wraper_column2 .wpr_col2_top a{display: inline-block;height:40px;line-height:60px;float: right;color: #717171;}
+#Container .wraper_column2 .wpr_col2_top a:hover{color: #212121;}
+#Container .wraper_column2 .wpr_col2_bottom{width: 100%;height:auto;}
+#Container .wraper_column2 .wpr_col2_bottom ul{width:100%;}
+#Container .wraper_column2 .wpr_col2_bottom ul li{float:left;padding: 2px 0px;width:160px;}
+#Container .wraper_column2 .wpr_col2_bottom ul li a{display: block;width: 100%;height:auto;border:1px solid #fff;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;}
+#Container .wraper_column2 .wpr_col2_bottom ul li a:hover{border:1px solid #e4e8e9;}
+#Container .wraper_column2 .wpr_col2_bottom ul li a img{display:block;width: 140px;height: 186px;margin: 0px auto;}
+#Container .wraper_column2 .wpr_col2_bottom ul li a span.this_sp_details{display:block;width: 100%;height:45px;text-align: center;}
+#Container .wraper_column2 .wpr_col2_bottom ul li a span.this_sp_details b{display: block;width: 100%;line-height: 20px;color: #212121;text-align: center;word-break:keep-all;white-space: nowrap;text-overflow:ellipsis;overflow: hidden;}
+#Container .wraper_column2 .wpr_col2_bottom ul li a span.this_sp_details em{color: #212121;font-style: normal;}
+#Container .wraper_column2 .wpr_col2_bottom ul li a span.this_sp_details em.tejia{color:#de4747;}
+/*
+	今日橱窗
+*/
+#Container .wraper_column3{width: 100%;height: auto;}
+#Container .wraper_column3 .wpr_col3_top{width: 100%;border-bottom:1px solid #000;}
+#Container .wraper_column3 .wpr_col3_top span{display: inline-block;float: left;height: 40px;line-height: 50px;color: #000;font-size: 16px;}
+#Container .wraper_column3 .wpr_col3_bottom{width: 100%;height: 500px;overflow: hidden;border:1px solid #e4e8e9;border-top:0 none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-o-box-sizing:border-box;}
+#Container .wraper_column3 .wpr_col3_bottom img{display: block;width:958px;height: 499px;margin: 0px auto;}
+/*
+	提示图片
+*/
+#Container .wraper_column4{width: 100%;height:auto;padding: 20px 0px;}
+#Container .wraper_column4:after{display:block;content: "";height: 0;clear:left;}
+#Container .wraper_column4 a{display: block;float: left;}
+#Container .wraper_column4 a.small{padding: 0px 9px 0px 8px;}
+/*
+	Banner
+*/
+#Container .wraper_column5{width: 100%;height: auto;}
+#Container .wraper_column5 a{position: relative;display: block;width: 100%;height: 70px;}
+#Container .wraper_column5 a img.erweima{display: block;position: absolute;width: 150px;height: 150px;top:-80px;right:-150px;}
+/*
+	女装：wraper_column6
+*/
+#Container .wraper_column6{width: 100%;height:auto;}
+#Container .wraper_column6 .wpr_col6_top,
+#Container .wraper_column2 .wpr_col6_top{width: 100%;height: auto;border-bottom: 1px solid #000;}
+#Container .wraper_column6 .wpr_col6_top span.wpr_col6t_lt,
+#Container .wraper_column2 .wpr_col6_top span.wpr_col6t_lt{display: block;height: 40px;line-height: 50px;float: left;color: #000;font-size: 16px;}
+#Container .wraper_column6 .wpr_col6_top span.wpr_col6t_rt,
+#Container .wraper_column2 .wpr_col6_top span.wpr_col6t_rt{display: block;float: right;margin-top:22px;}
+#Container .wraper_column6 .wpr_col6_top span.wpr_col6t_rt a,
+#Container .wraper_column2 .wpr_col6_top span.wpr_col6t_rt a{display: block;float: left;height: 15px;line-height:15px;padding:0px 10px;color: #717171;border-right:1px solid #717171;}
+#Container .wraper_column6 .wpr_col6_top span.wpr_col6t_rt a:hover,
+#Container .wraper_column2 .wpr_col6_top span.wpr_col6t_rt a:hover{color: #212121;}
+#Container .wraper_column6 .wpr_col6_top span.wpr_col6t_rt a.del_bor_padd,
+#Container .wraper_column2 .wpr_col6_top span.wpr_col6t_rt a.del_bor_padd{border-right: none;padding-right: 0px;}
+#Container .wraper_column6 .wpr_col6_bottom{width: 100%;height:auto;padding-top: 2px;}
+#Container .wraper_column6 .wpr_col6_bottom div{float: left;}
+/*
+	左边
+*/
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_lt{width: 132px;height:440px;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_lt .wpr_pplogo_list{width: 100%;height: 100%;overflow: hidden;position: relative;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_lt .wpr_pplogo_list ul{position: absolute;top: 0px;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_lt .wpr_pplogo_list ul li{float: left;width: 132px;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_lt .wpr_pplogo_list ul li a{display: block;width: 100%;border-bottom: 1px dotted #e4e8e9;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_lt .wpr_pplogo_list ul li a img{display: block;width: 130px;height: 62px;}
+/*
+	中间
+*/
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_ctr{width:340px;height:100%;margin: 0px 2.5px;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_ctr a{display: block;width: 100%;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_ctr a.mar_btm{margin-bottom: 5px;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_ctr a img{display:block;width: 340px;height: 220px;}
+/*
+	右边
+*/
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_rt{width:483px;height:100%;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_rt ul{width: 100%;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_rt ul li{float: left;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_rt a{position: relative;display:block;width: 160px;height: 221px;margin-top: -1px;margin-left: -1px;border:1px solid #e4e8e9;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_rt a span{display: block;position: absolute;width: 100%;height:34px;top: 0px;left:0px;padding:0px 10px 0px 20px;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_rt a span b{display: block;text-align: center;word-break:keep-all;white-space: nowrap;text-overflow:ellipsis;overflow: hidden;color: #212121;font-weight: normal;padding-top: 3px;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_rt a span em{display: block;text-align: center;font-style: normal;word-break:keep-all;white-space: nowrap;text-overflow:ellipsis;overflow: hidden;color: #717171;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_rt a img{display: block;position: absolute;width: 140px;height: 186px;left: 10px;bottom: 0px;transition:left .3s ease-out 0s;-moz-transition:left .3s ease-out 0s;-webkit-transition:left .3s ease-out 0s;-o-transition:left .3s ease-out 0s;}
+#Container .wraper_column6 .wpr_col6_bottom .wpr_col6b_rt a img:hover{left: 0;}
+/*
+	wraper_column7
+*/
+#Container .wraper_column7{width: 100%;height:auto;padding: 15px 0px;}
+#Container .wraper_column7 li{float: left;}
+#Container .wraper_column7 li.btweet_pd{padding: 0px 7.5px;}
+/*
+	wraper_column8
+*/
+.wraper_column8{width: 100%;height: 90px;overflow: hidden;padding-bottom: 10px;}
