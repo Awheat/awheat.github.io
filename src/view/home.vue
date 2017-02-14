@@ -19,7 +19,7 @@
             <!-- 雨滴动画 -->
             <div class="index-animate-rains"></div>
             <div class="index-footer">
-                  © 2016 wuwangcheng. All rights reserved.
+                  © 2016-2017 wuwangcheng. All rights reserved.
             </div>
       </div>
       </div>
