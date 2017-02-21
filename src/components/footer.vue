@@ -1,7 +1,7 @@
 <template>
 	<!-- footer -->
 	<div id="footer">
-		© 2016 wuwangcheng. All rights reserved.
+		© 2016-2017 wuwangcheng. All rights reserved.
 	</div>
 </template>
 <style scoped>
