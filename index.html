@@ -12,8 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="dist/css/all.min.css">
 </head>
 <body>
+      
 	<div id="bg-img"></div>
 	<div id="container">
+            <audio id="index_music" src="http://www.0dutv.com/upload/dance/F960214004939E58543730986F7009C7.mp3"></audio>
+            <div class="ms_stop" id="ms_btn"></div>
 		<!-- 个人信息及导航栏 -->
       	<div class="index-main">
       		<div class="index-uinfo">
@@ -37,6 +40,6 @@
 </body>
 <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript">
-      $(function(){var b=0;var a={i:0,data:["http://i2.buimg.com/587986/b41e9fe9384b7faa.jpg","http://i2.buimg.com/587986/213b3a9c58e05eb0.jpg","http://i2.buimg.com/587986/97582c7070cef744.jpg","http://i2.buimg.com/587986/f248117753cfbe51.jpg","http://i2.buimg.com/587986/ec974d9aefa33d4c.jpg"],bgFade:function(){b<4?b+=1:b=0;$("#bg-img").css({background:"url("+a.data[b]+")",backgroundSize:"100% 100%",transition:"all 1.5s linear 0s"})},init:function(){setInterval(this.bgFade,6000)}};a.init()});
+      $(function(){var c=0;var d={i:0,data:["http://i2.buimg.com/587986/b41e9fe9384b7faa.jpg","http://i2.buimg.com/587986/213b3a9c58e05eb0.jpg","http://i2.buimg.com/587986/97582c7070cef744.jpg","http://i2.buimg.com/587986/f248117753cfbe51.jpg","http://i2.buimg.com/587986/ec974d9aefa33d4c.jpg"],bgFade:function(){c<4?c+=1:c=0;$("#bg-img").css({background:"url("+d.data[c]+")",backgroundSize:"100% 100%",transition:"all 1.5s linear 0s"})},init:function(){setInterval(this.bgFade,6000)}};d.init();$("#ms_btn").click(function(){var a=document.getElementById("index_music");if(a.paused){$(this).removeClass("ms_stop").addClass("ms_play");a.play()}else{$(this).removeClass("ms_play").addClass("ms_stop");a.pause()}})});   
 </script>
 </html>
