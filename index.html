@@ -40,6 +40,6 @@
 </body>
 <script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript">
-      $(function(){var c=0;var d={i:0,data:["./dist/images/bg1.jpg","./dist/images/bg2.jpg","./dist/images/bg3.jpgg"],bgFade:function(){c<3?c+=1:c=0;$("#bg-img").css({background:"url("+d.data[c]+")",backgroundSize:"100% 100%",transition:"all 1.5s linear 0s"})},init:function(){setInterval(this.bgFade,6000)}};d.init();$("#ms_btn").click(function(){var a=document.getElementById("index_music");if(a.paused){$(this).removeClass("ms_stop").addClass("ms_play");a.play()}else{$(this).removeClass("ms_play").addClass("ms_stop");a.pause()}})});   
+      $(function(){var c=0;var d={i:0,data:["./dist/images/bg1.jpg","./dist/images/bg2.jpg","./dist/images/bg3.jpg"],bgFade:function(){c<3?c+=1:c=0;$("#bg-img").css({background:"url("+d.data[c]+")",backgroundSize:"100% 100%",transition:"all 1.5s linear 0s"})},init:function(){setInterval(this.bgFade,6000)}};d.init();$("#ms_btn").click(function(){var a=document.getElementById("index_music");if(a.paused){$(this).removeClass("ms_stop").addClass("ms_play");a.play()}else{$(this).removeClass("ms_play").addClass("ms_stop");a.pause()}})});   
 </script>
 </html>
