@@ -8,38 +8,8 @@
 	<meta content="telephone=no" name="format-detection" />
 	<meta content="email=no" name="format-detection" />
       <meta name="apple-mobile-web-app-capable" content="yes">
-	<link rel="stylesheet" type="text/css" href="dist/css/base.min.css">
-	<link rel="stylesheet" type="text/css" href="dist/css/all.min.css">
 </head>
 <body>
-	<div id="bg-img"></div>
-	<div id="container">
-            <!-- http://www.0dutv.com/upload/dance/F960214004939E58543730986F7009C7.mp3 -->
-            <audio id="index_music" src="./dist/music/czyfz.mp3"  loop="loop"></audio>
-            <div class="ms_stop" id="ms_btn"></div>
-		<!-- 个人信息及导航栏 -->
-      	<div class="index-main">
-      		<div class="index-uinfo">
-				<a href="#" class="index-photo"><img src="./dist/images/photo.jpg"></a>
-      			<h3 class="index-name">忘成莫及</h3>
-      			<p class="index-desc">莫等闲，白了少年头，空悲切。</p>
-      		</div>
-      		<div class="index-nav">
-      			<a href="index.html">首页</a>
-      			<a href="work.html">工作</a>
-      			<a href="life.html">生活</a>
-      			<a href="about.html">关于我</a>
-      		</div>
-      	</div>
-		<!-- 雨滴动画 -->
-      	<div class="index-animate-rains"></div>
-      	<div class="index-footer">
-			© 2016-2017 wuwangcheng. All rights reserved.
-      	</div>
-	</div>
+	<h1>Hello World ~</h1>
 </body>
-<script type="text/javascript" src="libs/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript">
-      $(function(){var c=0;var d={i:0,data:["./dist/images/bg1.jpg","./dist/images/bg2.jpg","./dist/images/bg3.jpg"],bgFade:function(){c<2?c+=1:c=0;$("#bg-img").css({background:"url("+d.data[c]+")",backgroundSize:"100% 100%",transition:"all 1.5s linear 0s"})},init:function(){setInterval(this.bgFade,6000)}};d.init();$("#ms_btn").click(function(){var a=document.getElementById("index_music");if(a.paused){$(this).removeClass("ms_stop").addClass("ms_play");a.play()}else{$(this).removeClass("ms_play").addClass("ms_stop");a.pause()}})});   
-</script>
 </html>
